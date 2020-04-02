@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="~/bundles/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+    <script type="text/javascript" src="~/bundles/scripts/month.js"></script>
+    <script src="~/bundles/scripts/datetime.js"></script>
+    <script src="~/bundles/scripts/style1.js"></script>
+    <script src="~/bundles/scripts/style2.js"></script>
+    <script src="~/bundles/scripts/style3.js"></script>
+
+</head>
+<body class="header-static ">
+    <header class="header-static">
+        <nav class="mainNav mainNav-hidden mainNav-transparent mainNav-home has-topShadow" data-script="main-nav" role="navigation">
+            <section class="mainNav--wrapper">
+                <div class="container">
+                    <div class="mainNav--mobile-button">
+                        <button class="mainNav--mobile-icon" role="button" aria-label="Navigation">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="mainNav--logo">
+                        <a href="/" class="mainNav--logoLink" aria-label="">
+                            <img src="./Images/Logo.png" alt="" class="mainNav--logoRed" />
+                            <img src="./Images/Logo.png" alt="" class="mainNav--logoWhite" />
+                            <span class="visibility-hidden"></span>
+                        </a>
+                    </div>
+                    <div class="mainNav--aside">
+                        <div class="mainNav--asideHeader">
+                            <div class="mainNav--logoLink aside-logo left">
+                                <img src="./Images/Logo.png" alt="" />
+                            </div>
+                            <div class="mainNav--mobile-button aside-closeButton right">
+                                <button class="mainNav--mobile-icon open" role="button" aria-label="Close navigation">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="mainNav--list no-list-style">
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Energy and environment
+                                    <i class="mainNav--arrowIcon glyphicon glyphicon-menu-down"></i>
+                                </span>
+
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/XTO-midland-permian_inline_118267.jpg" alt="XTO midland permian" />
+                                        <h4 class="h5">Energy and environment</h4>
+                                        <span class="subNav--overviewDescription">
+                                            We are committed to meeting the growing demand for energy, while at the same time reducing the environmental impacts.
+                                        </span>
+                                    </div>
+
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Energy resources
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Natural gas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Oil</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Environmental protection
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Environmental initiatives</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Effectively managing methane emissions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Climate change</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Sustainable water solutions</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Looking forward
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Outlook for Energy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Energy and Carbon Summary</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Tools and processes
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Drilling and production technology</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Hydraulic fracturing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Energy efficiency</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Risk management and safety</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Exploration technology</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Where we work
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Global operations</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Growing the Gulf</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Energy technology centers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">U.S. operations</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Research and innovation
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/Algae-lab_inline_142561.jpg" alt="Algae lab" />
+                                        <h4 class="h5">Research and innovation</h4>
+                                        <span class="subNav--overviewDescription">
+                                            For more than 135 years, we have pioneered the science and research that enables innovative technologies, changing our industry and the world.
+                                        </span>
+                                    </div>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section ">
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Advanced biofuels</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Carbon capture and storage</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">University partnerships</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Emerging vehicle and fuel technology</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Chemical</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Innovating Energy Solutions: R&amp;D Highlights</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Community engagement
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+
+
+
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/malaria-doctors-visit-Angola-supporting.jpg" alt="A woman with her child getting a malaria vaccination" />
+                                        <h4 class="h5">Community engagement</h4>
+                                        <span class="subNav--overviewDescription">
+                                            ExxonMobil's primary responsibility is to produce the energy and products the world needs in a responsible manner.
+                                        </span>
+                                    </div>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section ">
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Sustainability Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/#" target="" role="menuitem" tabindex="0">Working with communities</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Worldwide giving</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">The fight against malaria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">STEM education</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Women's economic opportunity</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Company
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/houston-campus-energy-center-and-fountains-supporting_143742.jpg" />
+                                        <h4 class="h5">Company</h4>
+                                        <span class="subNav--overviewDescription">
+                                            As one of the world's largest publicly traded energy providers and chemical manufacturers, ExxonMobil develops and applies next-generation technologies to help safely and responsibly meet the world's growing needs for energy and high-quality chemical products.
+                                        </span>
+                                    </div>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Overview
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Who we are</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Corporate governance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Contact us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Policy</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subNav--section has-title">
+                                            <span class="subNav--sectionTitle mainNav--parent">
+                                                Careers
+                                                <i class="subNav--arrowIcon icon-dropdown-arrow"></i>
+                                            </span>
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Career opportunities</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Featured hiring locations</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Newsroom
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/worker-on-ship-supporting.jpg" alt="worker on ship" />
+                                        <h4 class="h5">Latest news</h4>
+                                        <span class="subNav--overviewDescription">
+                                            Stay up to date with the latest from ExxonMobil.
+                                        </span>
+                                    </div>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section ">
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Newsroom</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">News releases</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Speeches</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Publications</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank" role="menuitem" tabindex="0">ExxonMobil stories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank" role="menuitem" tabindex="0">Perspectives blog</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Investors
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+                                <div class="subNav">
+                                    <div class="subNav--column subNav--overview">
+                                        <img src="./Images/corporate-building-supporting.jpg" alt="ExxonMobil corporate building at night" />
+                                        <h4 class="h5">Investors</h4>
+                                        <span class="subNav--overviewDescription">
+                                            Review corporate performance data, learn about our business model, read about our outlook for the energy industry, meet our management committee and more.
+                                        </span>
+                                    </div>
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section ">
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Investor relations</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Digital Annual Reports</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Sustainability for Investors</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainNav--listItem">
+                                <span class="mainNav--itemTitle mainNav--parent" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                    Career
+                                    <i class="mainNav--arrowIcon icon-dropdown-arrow"></i>
+                                </span>
+                                <div class="subNav">
+                                    <ul class="subNav--column no-list-style" role="menu">
+                                        <li class="subNav--section ">
+                                            <ul class="subNav--sectionLinks no-list-style" role="menu">
+                                                <li>
+                                                    <a href="#" target="" role="menuitem" tabindex="0">Online Text</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Home/CareerOpportunities" target="" role="menuitem" tabindex="0">Career opportunities</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mainNav--utilities">
+                        <button class="mainNav--globalSelector mainNav--globalSelector-hidden" data-script="global-selector-button" role="button" aria-label="Global Selector">
+                            <i class=" fas fa-globe"></i>
+                            <span class="mainNav--globalSelector-name">Global</span>
+                            <i class="fas fa-angle-down"></i>
+
+                        </button>
+                        <button class="mainNav--search-icon" data-script="search-button" data-pageSearch="False" role="button" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mainNav--overlay"></div>
+            </section>
+        </nav>
+        <script type="text/javascript" src="~/bundles/scripts/globalmenu.js"></script>
+        <section class="globalSelector" data-script="global-selector" data-string-logo="./Images/ExxonMobilLogoGrey2x.png" data-string-alt-logo="Logo" data-string-close-button-text="Global selector close button"></section>
+    </header>
+
+    <div class="searchBar" data-script="search-bar">
+        <div class="searchBar--overlay"></div>
+        <div class="container searchBar--container">
+            <div class="searchBar--wrapper">
+
+
+                <div class="arrow"></div>
+                <button class="searchBar--close" aria-label="close">
+                    <span class="visibility-hidden">close</span>
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <section class="searchModule" data-script="search-module" data-autocomplete-url="/api/v2/search/autocomplete" data-autocomplete-context-id="edd46e3b-daea-4e8e-b83b-e627ba992557" data-autocomplete-language="en" data-debounce="500" data-filter-category="filterBar" data-hide-filter="ExxonMobil" data-placeholder="Search for topics, articles, data" data-placeholder-mobile="Search">
+                    <form action="/search" method="get">
+                        <div class="container searchModule-gray">
+                            <div class="searchModule--wrapper">
+                                <div class="searchModule--input">
+                                    <div class="searchModule--input-icon">
+                                        <i class="fas fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="searchModule--input-txt">
+                                        <label for="searchModule" class="visibility-hidden">Search</label>
+                                        <input class="searchModule--search" type="search" name="search" autocomplete="off" id="searchModule" aria-label="Search" placeholder="Search for topics, articles, data">
+                                    </div>
+                                    <div class="searchModule--input-cta">
+                                        <a href="#" class="cta cta-secondary disabled">
+                                            Search <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="searchModule--popular">
+                                    <h4 class="eyebrow eyebrow-red">Popular searches</h4>
+                                    <div class="searchModule--popular-items">
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Energy forecast</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Annual Report</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Careers</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Oil production</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Locations</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Sustainability</a>
+                                        </div>
+                                        <div class="searchModule--popular-item">
+                                            <a href="#" class="link-black" target="">Biofuels</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="searchModule--autocomplete" style="top: 147px;">
+                                <div class="searchModule--autocomplete-wrapper">
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    @RenderBody()
+
+
+    <footer class="bg-dark">
+        <footer class="footer" data-script="footer">
+            <section class="footer--top">
+                <article class="container">
+                    <div class="footer--links">
+
+                        <ul class="footer--list">
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Who we are</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Contact us</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Investors</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Careers</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Newsroom</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="_blank" class="footer--link text-small">Energy Factor</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="_blank" class="footer--link text-small">Perspectives blog</a>
+                            </li>
+                            <li class="footer--listItem">
+                                <a href="#" target="" class="footer--link text-small">Energy lives here&trade;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer--socialMedia">
+                        <ul class="no-list-style">
+                            <li class="footer--socialLink">
+                                <a href="https://www.facebook.com/ExxonMobil/" target="_blank" class="footer--socialIcon" aria-label="">
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/fb-gray.svg" alt="" class="base-icon" />
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/fb-white.svg" alt="" class="hover-icon" />
+                                    <span class="visibility-hidden"></span>
+                                </a>
+                            </li>
+                            <li class="footer--socialLink">
+                                <a href="https://twitter.com/exxonmobil" target="_blank" class="footer--socialIcon" aria-label="">
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/tw-gray.svg" alt="" class="base-icon" />
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/tw-white.svg" alt="" class="hover-icon" />
+                                    <span class="visibility-hidden"></span>
+                                </a>
+                            </li>
+                            <li class="footer--socialLink">
+                                <a href="https://www.linkedin.com/company/exxonmobil/" target="_blank" class="footer--socialIcon" aria-label="">
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/in-gray.svg" alt="" class="base-icon" />
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/in-white.svg" alt="" class="hover-icon" />
+                                    <span class="visibility-hidden"></span>
+                                </a>
+                            </li>
+                            <li class="footer--socialLink">
+                                <a href="https://www.instagram.com/exxonmobil/" target="_blank" class="footer--socialIcon" aria-label="">
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/ig-gray.svg" alt="" class="base-icon" />
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/ig-white.svg" alt="" class="hover-icon" />
+                                    <span class="visibility-hidden"></span>
+                                </a>
+                            </li>
+                            <li class="footer--socialLink">
+                                <a href="http://www.youtube.com/user/exxonmobil" target="_blank" class="footer--socialIcon" aria-label="">
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/yt-gray.svg" alt="" class="base-icon" />
+                                    <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Social/yt-white.svg" alt="" class="hover-icon" />
+                                    <span class="visibility-hidden"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="footer--bottom">
+                <article class="container">
+                    <div class="footer--brands">
+
+                        <a href="#" target="" class="footer--brandLink main" aria-label="ExxonMobil logo">
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/logo-exxonmobil-main.svg" alt="ExxonMobil logo" class="base-icon" />
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/logo-exxonmobil-main-hover.svg" alt="ExxonMobil logo" class="hover-icon" />
+                            <span class="visibility-hidden">ExxonMobil logo</span>
+                        </a>
+                        <a href="#" target="_blank" class="footer--brandLink" aria-label="">
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/exxon-gray.svg" alt="" class="base-icon" />
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/exxon-white.svg" alt="" class="hover-icon" />
+                            <span class="visibility-hidden"></span>
+                        </a>
+                        <a href="#" target="_blank" class="footer--brandLink" aria-label="">
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/mobil-gray.svg" alt="" class="base-icon" />
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/mobil-white.svg" alt="" class="hover-icon" />
+                            <span class="visibility-hidden"></span>
+                        </a>
+                        <a href="#" target="_blank" class="footer--brandLink" aria-label="">
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/esso-gray.svg" alt="" class="base-icon" />
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/esso-white.svg" alt="" class="hover-icon" />
+                            <span class="visibility-hidden"></span>
+                        </a>
+                        <a href="#" target="_blank" class="footer--brandLink" aria-label="">
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/xto-gray.svg" alt="" class="base-icon" />
+                            <img src="https://corporate.exxonmobil.com/-/media/Global/Icons/Footer/Sites/xto-white.svg" alt="" class="hover-icon" />
+                            <span class="visibility-hidden"></span>
+                        </a>
+
+                    </div>
+                    <div class="footer--privacy">
+                        <p class="text-extra-small footer--policyWrapper">
+                            <a href="#" target="" class="footer--policy">Privacy policy</a>
+                        </p>
+                        <p class="text-extra-small footer--policyWrapper">
+                            <a href="#" target="" class="footer--policy">Terms and conditions</a>
+                        </p>
+                        <p class="footer--copyright text-extra-small" tabindex="0" aria-label="copyright">
+                            &copy; Copyright 2020 Exxon Mobil Corporation. All Rights Reserved.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </footer>
+    </footer>
+
+</body>
+</html>
+<script src="~/bundles/scripts/vendors.js"></script>
+<script src="~/bundles/scripts/main.js"></script>
+<script src="~/players.cover.net/index.min.js"></script>
+<script src="~/assets/myscript1.js.js"></script>
+<script src="~/assets/myscript2.js.js"></script>
+<script src="~/assets/myscript3.js.js"></script>
+<script src="~/assets/myscript4.js.js"></script>
+<script src="~/assets/myscript5.js.js"></script>
+<script src="~/assets/myscript6.js.js"></script>
+<script src="~/assets/myscript7.js.js"></script>
+<script src="~/assets/myscript8.js.js"></script>
+<script src="~/assets/myscript9.js.js"></script>
+<script src="~/assets/myscript10.js.js"></script>
+<script src="~/assets/myscript11.js.js"></script>
+<script src="~/assets/myscript12.js.js"></script>
+<script src="~/assets/myscript13.js.js"></script>
+<script src="~/assets/myscript14.js.js"></script>
+<script src="~/assets/myscript15.js.js"></script>
+<script src="~/assets/myscript16.js.js"></script>
+<script src="~/assets/myscript17.js.js"></script>
+<script src="~/assets/myscript18.js.js"></script>
+<script src="~/assets/myscript19.js.js"></script>
+<input id="MediaFramework_ItemId" name="MediaFramework_ItemId" type="hidden" value="4DD673DCA32D4365989AD483210880A7">
