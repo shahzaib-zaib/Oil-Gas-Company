@@ -70,6 +70,19 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\Addadmin.aspx" />
     <Content Include="Admin\Addquestion.aspx" />
+    <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\Deleteadmin.aspx" />
+    <Content Include="Admin\DetailinterviewQuestion.aspx" />
+    <Content Include="Admin\Editcategory.aspx" />
+    <Content Include="Admin\EditCriteria.aspx" />
+    <Content Include="Admin\Editinterview.aspx" />
+    <Content Include="Admin\Editquestion.aspx" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Interview.aspx" />
+    <Content Include="Admin\Interviewdetails.aspx" />
+    <Content Include="Admin\Interviewquestion.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Question.aspx" />
     <Content Include="Category.aspx" />
     <Content Include="Criteria.aspx" />
     <Content Include="Global.asax" />
@@ -128,6 +141,97 @@
     </Compile>
     <Compile Include="Admin\Addquestion.aspx.designer.cs">
       <DependentUpon>Addquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Deleteadmin.aspx.cs">
+      <DependentUpon>Deleteadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Deleteadmin.aspx.designer.cs">
+      <DependentUpon>Deleteadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailinterviewQuestion.aspx.cs">
+      <DependentUpon>DetailinterviewQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DetailinterviewQuestion.aspx.designer.cs">
+      <DependentUpon>DetailinterviewQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Editcategory.aspx.cs">
+      <DependentUpon>Editcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Editcategory.aspx.designer.cs">
+      <DependentUpon>Editcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditCriteria.aspx.cs">
+      <DependentUpon>EditCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditCriteria.aspx.designer.cs">
+      <DependentUpon>EditCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Editinterview.aspx.cs">
+      <DependentUpon>Editinterview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Editinterview.aspx.designer.cs">
+      <DependentUpon>Editinterview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Editquestion.aspx.cs">
+      <DependentUpon>Editquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Editquestion.aspx.designer.cs">
+      <DependentUpon>Editquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Interview.aspx.cs">
+      <DependentUpon>Interview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Interview.aspx.designer.cs">
+      <DependentUpon>Interview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Interviewdetails.aspx.cs">
+      <DependentUpon>Interviewdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Interviewdetails.aspx.designer.cs">
+      <DependentUpon>Interviewdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Interviewquestion.aspx.cs">
+      <DependentUpon>Interviewquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Interviewquestion.aspx.designer.cs">
+      <DependentUpon>Interviewquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Question.aspx.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Question.aspx.designer.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
     </Compile>
     <Compile Include="Candidatemaster.Master.cs">
       <DependentUpon>Candidatemaster.Master</DependentUpon>
