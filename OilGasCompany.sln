@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilGasCompany.Web", "OilGasCompany.Web\OilGasCompany.Web.csproj", "{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInterview", "OnlineInterview\OnlineInterview.csproj", "{6AECA22A-CC0D-4891-B8F8-731EA098252E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilGasCompany.Interview", "OilGasCompany.Interview\OilGasCompany.Interview.csproj", "{00E67B35-17EA-4488-9E12-C467E6204023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AECA22A-CC0D-4891-B8F8-731EA098252E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AECA22A-CC0D-4891-B8F8-731EA098252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AECA22A-CC0D-4891-B8F8-731EA098252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AECA22A-CC0D-4891-B8F8-731EA098252E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E67B35-17EA-4488-9E12-C467E6204023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E67B35-17EA-4488-9E12-C467E6204023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E67B35-17EA-4488-9E12-C467E6204023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E67B35-17EA-4488-9E12-C467E6204023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
