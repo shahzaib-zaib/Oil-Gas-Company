@@ -16,12 +16,12 @@ namespace OilGasCompany.Interview.Admin
         {
             if (!IsPostBack)
             {
-                getallstudents();
+                getAllCandidates();
             }
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //method for get all result
-        public void getallstudents()
+        public void getAllCandidates()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
@@ -37,13 +37,13 @@ namespace OilGasCompany.Interview.Admin
                             ad.Fill(tb);
                             if (tb != null)
                             {
-                                gridallstudents.DataSource = tb;
-                                gridallstudents.DataBind();
+                                gridAllCandidates.DataSource = tb;
+                                gridAllCandidates.DataBind();
                             }
                             else
                             {
-                                panel_studentlistshow_warning.Visible = true;
-                                lbl_studentlistshowwarning.Text = "There is no result right now in this application";
+                                panel_CandidateListShow_Warning.Visible = true;
+                                lbl_CandidateListShowWarning.Text = "There is no result right now in this application";
                             }
                         }
                     }
@@ -51,8 +51,8 @@ namespace OilGasCompany.Interview.Admin
                 }
                 catch (Exception ex)
                 {
-                    panel_studentlistshow_warning.Visible = true;
-                    lbl_studentlistshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_CandidateListShow_Warning.Visible = true;
+                    lbl_CandidateListShowWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
@@ -60,8 +60,8 @@ namespace OilGasCompany.Interview.Admin
         //for paging
         protected void gridallstudents_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            gridallstudents.PageIndex = e.NewPageIndex;
-            getallstudents();
+            gridAllCandidates.PageIndex = e.NewPageIndex;
+            getAllCandidates();
         }
     }
 }

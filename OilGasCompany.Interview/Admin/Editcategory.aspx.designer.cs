@@ -15,13 +15,13 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelcategorylist control.
+        /// btn_panelCategoryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelcategorylist;
+        protected global::System.Web.UI.WebControls.Button btn_panelCategoryList;
 
         /// <summary>
         /// txt_categoryedit control.
@@ -42,30 +42,30 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator require_category;
 
         /// <summary>
-        /// btn_editcategory control.
+        /// btn_EditCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_editcategory;
+        protected global::System.Web.UI.WebControls.Button btn_EditCategory;
 
         /// <summary>
-        /// panel_editcategory_warning control.
+        /// panel_EditCategory_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_editcategory_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_EditCategory_Warning;
 
         /// <summary>
-        /// lbl_categoryeditwarning control.
+        /// lbl_CategoryEditWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_categoryeditwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_CategoryEditWarning;
     }
 }

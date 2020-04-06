@@ -6,7 +6,7 @@
         <div class="card">
             <%--Button For select add question for exam--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelquestion" runat="server" Text="Add Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+                <asp:Button ID="btn_panelQuestion" runat="server" Text="Add Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card-body">
                 <div class="row form-group">
@@ -58,12 +58,12 @@
             </div>
                 <div class="card-footer">
                         <div class="offset-2">
-                            <asp:Button ID="btn_addquestion" runat="server" Text="Add Question" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_addquestion_Click"  />
+                            <asp:Button ID="btn_addQuestion" runat="server" Text="Add Question" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_addQuestion_Click"  />
                         </div>
-                        <asp:Panel ID="panel_addquestion_warning" runat="server" Visible="false">
+                        <asp:Panel ID="panel_addQuestion_warning" runat="server" Visible="false">
                             <br />
                             <div class="alert alert-danger text-center">
-                                <asp:Label ID="lbl_addquestionwarning" runat="server" />
+                                <asp:Label ID="lbl_addQuestionwarning" runat="server" />
                             </div>
                         </asp:Panel>
                     </div>

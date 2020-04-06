@@ -20,20 +20,20 @@ namespace OilGasCompany.Interview.Admin
 
                 if (eid == null)
                 {
-                    Response.Redirect("~/admin/question.aspx");
+                    Response.Redirect("~/Admin/Question.aspx");
                 }
-                getexamquestiondetails(Convert.ToInt32(eid));
+                getInterviewQuestionDetails(Convert.ToInt32(eid));
             }
         }
         //method for getting question for the exam id
-        public void getexamquestiondetails(int id)
+        public void getInterviewQuestionDetails(int id)
         {
-            string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+            string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spExamquestion", con);
+                SqlCommand cmd = new SqlCommand("spInterviewQuestion", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@examfid", id);
+                cmd.Parameters.AddWithValue("@interviewfid", id);
                 try
                 {
                     con.Open();
@@ -43,15 +43,15 @@ namespace OilGasCompany.Interview.Admin
                         using (DataTable tb = new DataTable())
                         {
                             ad.Fill(tb);
-                            gridview_examdetails.DataSource = tb;
-                            gridview_examdetails.DataBind();
+                            gridview_InterviewDetails.DataSource = tb;
+                            gridview_InterviewDetails.DataBind();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examdetails_warning.Visible = true;
-                    lbl_examdetailswarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
+                    panel_InterviewDetails_Warning.Visible = true;
+                    lbl_InterviewDetailsWarning.Text = "Something went wrong. Please contact your provider </br>" + ex.Message;
                 }
 
             }

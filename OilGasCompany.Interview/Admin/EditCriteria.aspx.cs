@@ -19,26 +19,26 @@ namespace OilGasCompany.Interview.Admin
                 string sid = Request.QueryString["sid"];
                 if (sid == null)
                 {
-                    Response.Redirect("~/admin/subject.aspx");
+                    Response.Redirect("~/Admin/Criteria.aspx");
                 }
-                txt_subjectedit.Focus();
+                txt_criteriaedit.Focus();
                 get_categorydrp(); // calling for dropdown method
                 categoryedit_fill(Convert.ToInt32(sid)); //calling for text method
 
 
             }
         }
-        protected void btn_editsubject_Click(object sender, EventArgs e)
+        protected void btn_EditCriteria_Click(object sender, EventArgs e)
         {
             string sid = Request.QueryString["sid"];
             if (IsValid)
             {
                 using (SqlConnection con = new SqlConnection(s))
                 {
-                    SqlCommand cmd = new SqlCommand("spSubjectedit", con);
+                    SqlCommand cmd = new SqlCommand("spCriteriaEdit", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@subject_name", txt_subjectedit.Text);
-                    cmd.Parameters.AddWithValue("@subject_id", Convert.ToInt32(sid));
+                    cmd.Parameters.AddWithValue("@criteria_name", txt_criteriaedit.Text);
+                    cmd.Parameters.AddWithValue("@criteria_id", Convert.ToInt32(sid));
                     cmd.Parameters.AddWithValue("@category_id", drp_categoryedit.SelectedValue);
                     try
                     {
@@ -46,38 +46,38 @@ namespace OilGasCompany.Interview.Admin
                         int i = (int)cmd.ExecuteNonQuery();
                         if (i > 0)
                         {
-                            Response.Redirect("~/admin/subject.aspx");
+                            Response.Redirect("~/Admin/Criteria.aspx");
                         }
                         else
                         {
-                            txt_subjectedit.Focus();
-                            panel_editsubject_warning.Visible = true;
-                            lbl_editsubject_warning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
+                            txt_criteriaedit.Focus();
+                            panel_EditCriteria_Warning.Visible = true;
+                            lbl_EditCriteria_Warning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
                         }
                     }
                     catch (Exception ex)
                     {
-                        txt_subjectedit.Focus();
-                        panel_editsubject_warning.Visible = true;
-                        lbl_editsubject_warning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                        txt_criteriaedit.Focus();
+                        panel_EditCriteria_Warning.Visible = true;
+                        lbl_EditCriteria_Warning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                     }
                 } // end of using
             }
             else
             {
-                txt_subjectedit.Focus();
-                panel_editsubject_warning.Visible = true;
-                lbl_editsubject_warning.Text = "You must fill all the requirements";
+                txt_criteriaedit.Focus();
+                panel_EditCriteria_Warning.Visible = true;
+                lbl_EditCriteria_Warning.Text = "You must fill all the requirements";
             }
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //edit fill text method
         public void categoryedit_fill(int id)
         {
 
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spSubjecteditfill", con);
+                SqlCommand cmd = new SqlCommand("spCriteriaEditFill", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id", id);
                 try
@@ -86,13 +86,13 @@ namespace OilGasCompany.Interview.Admin
                     SqlDataReader rd = cmd.ExecuteReader();
                     while (rd.Read())
                     {
-                        txt_subjectedit.Text = rd["subject_name"].ToString();
+                        txt_criteriaedit.Text = rd["criteria_name"].ToString();
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_editsubject_warning.Visible = true;
-                    lbl_editsubject_warning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_EditCriteria_Warning.Visible = true;
+                    lbl_EditCriteria_Warning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
@@ -101,22 +101,22 @@ namespace OilGasCompany.Interview.Admin
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from category", con);
+                SqlCommand cmd = new SqlCommand("select * from Category", con);
                 try
                 {
                     con.Open();
                     SqlDataReader rd = cmd.ExecuteReader();
                     drp_categoryedit.DataSource = rd;
                     drp_categoryedit.DataBind();
-                    ListItem li = new ListItem("Select category", "-1");
+                    ListItem li = new ListItem("Select Category", "-1");
                     drp_categoryedit.Items.Insert(0, li);
 
                 }
                 catch (Exception ex)
                 {
-                    txt_subjectedit.Focus();
-                    panel_editsubject_warning.Visible = true;
-                    lbl_editsubject_warning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    txt_criteriaedit.Focus();
+                    panel_EditCriteria_Warning.Visible = true;
+                    lbl_EditCriteria_Warning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }

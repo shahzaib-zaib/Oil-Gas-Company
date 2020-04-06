@@ -18,41 +18,41 @@ namespace OilGasCompany.Interview.Admin
             if (!IsPostBack)
             {
                 panel_categorylist.Visible = true;
-                panel_addcategory.Visible = false;
-                btn_panelcategorylist.BackColor = ColorTranslator.FromHtml("#343A40");
-                btn_paneladdcategory.BackColor = ColorTranslator.FromHtml("#DC3545");
+                panel_AddCategory.Visible = false;
+                btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#343A40");
+                btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#DC3545");
                 categorylistmethod();
             }
         }
         //This is button for the enable list of category panel 
-        protected void btn_panelcategorylist_Click(object sender, EventArgs e)
+        protected void btn_panelCategoryList_Click(object sender, EventArgs e)
         {
             panel_categorylist.Visible = true;
-            panel_addcategory.Visible = false;
-            btn_panelcategorylist.BackColor = ColorTranslator.FromHtml("#343A40");
-            btn_paneladdcategory.BackColor = ColorTranslator.FromHtml("#DC3545");
+            panel_AddCategory.Visible = false;
+            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#343A40");
+            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#DC3545");
             categorylistmethod();
 
         }
         //This is button for enable the adding in category panel
-        protected void btn_paneladdcategory_Click(object sender, EventArgs e)
+        protected void btn_panelAddCategory_Click(object sender, EventArgs e)
         {
             txt_category.Focus();
             panel_categorylist.Visible = false;
-            panel_addcategory.Visible = true;
-            btn_panelcategorylist.BackColor = ColorTranslator.FromHtml("#DC3545");
-            btn_paneladdcategory.BackColor = ColorTranslator.FromHtml("#343A40");
+            panel_AddCategory.Visible = true;
+            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#DC3545");
+            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#343A40");
         }
 
         //This is for adding the category in databse 
-        protected void btn_addcategory_Click(object sender, EventArgs e)
+        protected void btn_AddCategory_Click(object sender, EventArgs e)
         {
             if (IsValid)
             {
 
                 using (SqlConnection con = new SqlConnection(s))
                 {
-                    SqlCommand cmd = new SqlCommand("insert into category (category_name) values (@category_name)", con);
+                    SqlCommand cmd = new SqlCommand("insert into Category (category_name) values (@category_name)", con);
                     cmd.Parameters.AddWithValue("@category_name", txt_category.Text);
                     try
                     {
@@ -61,21 +61,21 @@ namespace OilGasCompany.Interview.Admin
                         if (i > 0)
                         {
                             txt_category.Text = string.Empty;
-                            Response.Redirect("~/admin/category.aspx");
+                            Response.Redirect("~/Admin/Category.aspx");
                             Response.Write("Added Succesfully");
                         }
                         else
                         {
                             txt_category.Focus();
-                            panel_addcategory_warning.Visible = true;
-                            lbl_categoryaddwarning.Text = "Something went wrong";
+                            panel_AddCategory_Warning.Visible = true;
+                            lbl_CategoryAddWarning.Text = "Something went wrong";
                         }
                     }
                     catch (Exception ex)
                     {
                         txt_category.Focus();
-                        panel_addcategory_warning.Visible = true;
-                        lbl_categoryaddwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                        panel_AddCategory_Warning.Visible = true;
+                        lbl_CategoryAddWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                     }
 
                 }
@@ -83,13 +83,13 @@ namespace OilGasCompany.Interview.Admin
             else
             {
                 txt_category.Focus();
-                panel_addcategory_warning.Visible = true;
-                lbl_categoryaddwarning.Text = "You must fill all the requirements";
+                panel_AddCategory_Warning.Visible = true;
+                lbl_CategoryAddWarning.Text = "You must fill all the requirements";
             }
 
         }
         // For row command argument
-        protected void grdview_categorylist_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void grdview_CategoryList_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "delete_category")
             {
@@ -98,19 +98,19 @@ namespace OilGasCompany.Interview.Admin
             }
         }
         // from page index changing 
-        protected void grdview_categorylist_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void grdview_CategoryList_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            grdview_categorylist.PageIndex = e.NewPageIndex;
+            grdview_CategoryList.PageIndex = e.NewPageIndex;
             categorylistmethod();
         }
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //Mehtod for retriving category into list item 
         public void categorylistmethod()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from category", con);
+                SqlCommand cmd = new SqlCommand("select * from Category", con);
                 try
                 {
                     con.Open();
@@ -121,15 +121,15 @@ namespace OilGasCompany.Interview.Admin
                         using (DataTable dt = new DataTable())
                         {
                             sda.Fill(dt);
-                            grdview_categorylist.DataSource = dt;
-                            grdview_categorylist.DataBind();
+                            grdview_CategoryList.DataSource = dt;
+                            grdview_CategoryList.DataBind();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_categorylist_warning.Visible = true;
-                    lbl_categorylistwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_CategoryList_Warning.Visible = true;
+                    lbl_CategoryListWarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
                 }
             }
         }
@@ -147,19 +147,19 @@ namespace OilGasCompany.Interview.Admin
                     int i = (int)cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        Response.Redirect("~/admin/category.aspx");
+                        Response.Redirect("~/Admin/Category.aspx");
                         Response.Write("Delete Succesfully");
                     }
                     else
                     {
-                        panel_categorylist_warning.Visible = true;
-                        lbl_categorylistwarning.Text = "Something went wrong. Can't delete now";
+                        panel_CategoryList_Warning.Visible = true;
+                        lbl_CategoryListWarning.Text = "Something went wrong. Can't delete now";
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_categorylist_warning.Visible = true;
-                    lbl_categorylistwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_CategoryList_Warning.Visible = true;
+                    lbl_CategoryListWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
 
             }

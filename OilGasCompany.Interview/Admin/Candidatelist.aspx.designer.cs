@@ -24,30 +24,30 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.Button btn_panelresult;
 
         /// <summary>
-        /// gridallstudents control.
+        /// gridAllCandidates control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridallstudents;
+        protected global::System.Web.UI.WebControls.GridView gridAllCandidates;
 
         /// <summary>
-        /// panel_studentlistshow_warning control.
+        /// panel_CandidateListShow_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_studentlistshow_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_CandidateListShow_Warning;
 
         /// <summary>
-        /// lbl_studentlistshowwarning control.
+        /// lbl_CandidateListShowWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_studentlistshowwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_CandidateListShowWarning;
     }
 }

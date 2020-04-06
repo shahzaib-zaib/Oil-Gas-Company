@@ -6,15 +6,15 @@
         <div class="card">
             <%--Button For edit--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_detailsexamquestion" runat="server" Text="Details Exam Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+                <asp:Button ID="btn_DetailsInterviewQuestion" runat="server" Text="Details Interview Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card mb-3">
                 <div class="card-body">
                     <%-- For showing the details --%>
                     <div class="table table-responsive">
-                        <asp:DetailsView ID="gridview_examdetails" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateRows="False">
+                        <asp:DetailsView ID="gridview_InterviewDetails" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateRows="False">
                             <Fields>
-                                <asp:BoundField DataField="exam_description" HeaderText="Exam Discription" NullDisplayText="No Discription">
+                                <asp:BoundField DataField="interview_description" HeaderText="Interview Discription" NullDisplayText="No Discription">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="question_name" HeaderText="Question">
@@ -37,15 +37,15 @@
                                 </asp:BoundField>
                             </Fields>
                             <FooterTemplate>
-                                <asp:Button ID="btn_backquestion" runat="server" Text="Back TO Question" CssClass="btn btn-info" BackColor="#343A40" BorderStyle="None" ForeColor="White" PostBackUrl="~/admin/question.aspx" />
+                                <asp:Button ID="btn_BackQuestion" runat="server" Text="Back TO Question" CssClass="btn btn-info" BackColor="#343A40" BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/Question.aspx" />
                             </FooterTemplate>
                             <HeaderStyle CssClass="text-center" />
                         </asp:DetailsView>
-                        <asp:Panel ID="panel_examdetails_warning" runat="server" Visible="false">
+                        <asp:Panel ID="panel_InterviewDetails_Warning" runat="server" Visible="false">
                             <div class="card-footer">
                                 <br />
                                 <div class="alert alert-danger text-center">
-                                    <asp:Label ID="lbl_examdetailswarning" runat="server" />
+                                    <asp:Label ID="lbl_InterviewDetailsWarning" runat="server" />
                                 </div>
                             </div>
                         </asp:Panel>

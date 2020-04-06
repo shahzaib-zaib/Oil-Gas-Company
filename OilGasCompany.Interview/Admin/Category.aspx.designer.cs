@@ -15,31 +15,31 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelcategorylist control.
+        /// btn_panelCategoryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelcategorylist;
+        protected global::System.Web.UI.WebControls.Button btn_panelCategoryList;
 
         /// <summary>
-        /// btn_paneladdcategory control.
+        /// btn_panelAddCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_paneladdcategory;
+        protected global::System.Web.UI.WebControls.Button btn_panelAddCategory;
 
         /// <summary>
-        /// panel_addcategory control.
+        /// panel_AddCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addcategory;
+        protected global::System.Web.UI.WebControls.Panel panel_AddCategory;
 
         /// <summary>
         /// txt_category control.
@@ -60,31 +60,31 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator require_category;
 
         /// <summary>
-        /// btn_addcategory control.
+        /// btn_AddCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_addcategory;
+        protected global::System.Web.UI.WebControls.Button btn_AddCategory;
 
         /// <summary>
-        /// panel_addcategory_warning control.
+        /// panel_AddCategory_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addcategory_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_AddCategory_Warning;
 
         /// <summary>
-        /// lbl_categoryaddwarning control.
+        /// lbl_CategoryAddWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_categoryaddwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_CategoryAddWarning;
 
         /// <summary>
         /// panel_categorylist control.
@@ -96,30 +96,30 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.Panel panel_categorylist;
 
         /// <summary>
-        /// grdview_categorylist control.
+        /// grdview_CategoryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdview_categorylist;
+        protected global::System.Web.UI.WebControls.GridView grdview_CategoryList;
 
         /// <summary>
-        /// panel_categorylist_warning control.
+        /// panel_CategoryList_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_categorylist_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_CategoryList_Warning;
 
         /// <summary>
-        /// lbl_categorylistwarning control.
+        /// lbl_CategoryListWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_categorylistwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_CategoryListWarning;
     }
 }

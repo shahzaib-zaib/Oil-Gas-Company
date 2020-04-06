@@ -15,31 +15,31 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelsubjectlist control.
+        /// btn_panelCriteriaList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelsubjectlist;
+        protected global::System.Web.UI.WebControls.Button btn_panelCriteriaList;
 
         /// <summary>
-        /// btn_paneladdSubject control.
+        /// btn_panelAddCriteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_paneladdSubject;
+        protected global::System.Web.UI.WebControls.Button btn_panelAddCriteria;
 
         /// <summary>
-        /// panel_addsubject control.
+        /// panel_AddCriteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addsubject;
+        protected global::System.Web.UI.WebControls.Panel panel_AddCriteria;
 
         /// <summary>
         /// drp_category control.
@@ -60,84 +60,84 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator require_drpcategory;
 
         /// <summary>
-        /// txt_subject control.
+        /// txt_criteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_subject;
+        protected global::System.Web.UI.WebControls.TextBox txt_criteria;
 
         /// <summary>
-        /// require_subject control.
+        /// require_criteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_subject;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_criteria;
 
         /// <summary>
-        /// btn_addsubject control.
+        /// btn_AddCriteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_addsubject;
+        protected global::System.Web.UI.WebControls.Button btn_AddCriteria;
 
         /// <summary>
-        /// panel_addsubject_warning control.
+        /// panel_AddCriteria_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addsubject_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_AddCriteria_Warning;
 
         /// <summary>
-        /// lbl_addsubject_warning control.
+        /// lbl_AddCriteria_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_addsubject_warning;
+        protected global::System.Web.UI.WebControls.Label lbl_AddCriteria_Warning;
 
         /// <summary>
-        /// panel_subjectlist control.
+        /// panel_CriteriaList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_subjectlist;
+        protected global::System.Web.UI.WebControls.Panel panel_CriteriaList;
 
         /// <summary>
-        /// grdview_subjectlist control.
+        /// grdview_CriteriaList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdview_subjectlist;
+        protected global::System.Web.UI.WebControls.GridView grdview_CriteriaList;
 
         /// <summary>
-        /// panel_subjectlist_warning control.
+        /// panel_CriteriaList_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_subjectlist_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_CriteriaList_Warning;
 
         /// <summary>
-        /// lbl_subjectlistwarning control.
+        /// lbl_CriteriaListWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_subjectlistwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_CriteriaListWarning;
     }
 }

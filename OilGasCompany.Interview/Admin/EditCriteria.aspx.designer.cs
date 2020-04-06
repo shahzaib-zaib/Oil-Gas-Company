@@ -15,13 +15,13 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelsubjectlist control.
+        /// btn_panelCriteriaList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelsubjectlist;
+        protected global::System.Web.UI.WebControls.Button btn_panelCriteriaList;
 
         /// <summary>
         /// drp_categoryedit control.
@@ -42,48 +42,48 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator require_drpcategory;
 
         /// <summary>
-        /// txt_subjectedit control.
+        /// txt_criteriaedit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_subjectedit;
+        protected global::System.Web.UI.WebControls.TextBox txt_criteriaedit;
 
         /// <summary>
-        /// require_subject control.
+        /// require_criteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_subject;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_criteria;
 
         /// <summary>
-        /// btn_editsubject control.
+        /// btn_EditCriteria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_editsubject;
+        protected global::System.Web.UI.WebControls.Button btn_EditCriteria;
 
         /// <summary>
-        /// panel_editsubject_warning control.
+        /// panel_EditCriteria_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_editsubject_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_EditCriteria_Warning;
 
         /// <summary>
-        /// lbl_editsubject_warning control.
+        /// lbl_EditCriteria_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_editsubject_warning;
+        protected global::System.Web.UI.WebControls.Label lbl_EditCriteria_Warning;
     }
 }

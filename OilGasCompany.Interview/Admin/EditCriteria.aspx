@@ -6,7 +6,7 @@
         <div class="card">
          <%--Button For edit subject slect--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelsubjectlist" runat="server" Text="Edit Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+                <asp:Button ID="btn_panelCriteriaList" runat="server" Text="Edit Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card-body">
                     <div class="row form-group">
@@ -18,20 +18,20 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Subject Name</label>
+                        <label class="col-md-2 col-form-label ">Criteria Name</label>
                         <div class="col-md-4">
-                            <asp:TextBox ID="txt_subjectedit" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="require_subject" runat="server" ErrorMessage="Enter subject" ControlToValidate="txt_subjectedit" ForeColor="red"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txt_criteriaedit" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="require_criteria" runat="server" ErrorMessage="Enter subject" ControlToValidate="txt_criteriaedit" ForeColor="red"></asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="card-footer">
                         <div class="offset-2">
-                            <asp:Button ID="btn_editsubject" runat="server" Text="Edit Subject" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_editsubject_Click" />
+                            <asp:Button ID="btn_EditCriteria" runat="server" Text="Edit Criteria" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_EditCriteria_Click" />
                         </div>
-                        <asp:Panel ID="panel_editsubject_warning" runat="server" Visible="false">
+                        <asp:Panel ID="panel_EditCriteria_Warning" runat="server" Visible="false">
                             <br />
                             <div class="alert alert-danger text-center">
-                                <asp:Label ID="lbl_editsubject_warning" runat="server" />
+                                <asp:Label ID="lbl_EditCriteria_Warning" runat="server" />
                             </div>
                         </asp:Panel>
                     </div>

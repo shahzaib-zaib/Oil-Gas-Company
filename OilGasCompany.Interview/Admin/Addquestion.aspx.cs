@@ -19,13 +19,13 @@ namespace OilGasCompany.Interview.Admin
                 string eid = Request.QueryString["eid"];
                 if (eid == null)
                 {
-                    Response.Redirect("~/admin/exam.aspx");
+                    Response.Redirect("~/admin/Interview.aspx");
                 }
             }
         }
 
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString; //string of connection
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString; //string of connection
                                                                                     //for adding the question having exam id
         protected void btn_addquestion_Click(object sender, EventArgs e)
         {
@@ -34,7 +34,7 @@ namespace OilGasCompany.Interview.Admin
             {
                 using (SqlConnection con = new SqlConnection(s))
                 {
-                    SqlCommand cmd = new SqlCommand("spAddquestion", con);
+                    SqlCommand cmd = new SqlCommand("spAddQuestion", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@questionname", txt_questionname.Text);
                     cmd.Parameters.AddWithValue("@optionone", txt_optionone.Text);
@@ -42,35 +42,35 @@ namespace OilGasCompany.Interview.Admin
                     cmd.Parameters.AddWithValue("@optionthree", txt_optionthree.Text);
                     cmd.Parameters.AddWithValue("@optionfour", txt_optionfour.Text);
                     cmd.Parameters.AddWithValue("@questionanswer", rdo_correctanswer.SelectedValue);
-                    cmd.Parameters.AddWithValue("@examfid", Convert.ToInt32(eid));
+                    cmd.Parameters.AddWithValue("@interviewfid", Convert.ToInt32(eid));
                     try
                     {
                         con.Open();
                         int i = cmd.ExecuteNonQuery();
                         if (i > 0)
                         {
-                            Response.Redirect("~/admin/exam.aspx");
+                            Response.Redirect("~/admin/Interview.aspx");
                         }
                         else
                         {
                             txt_questionname.Focus();
-                            panel_addquestion_warning.Visible = true;
-                            lbl_addquestionwarning.Text = "Try again. Subject is not added";
+                            panel_addQuestion_warning.Visible = true;
+                            lbl_addQuestionwarning.Text = "Try again. Criteria is not added";
                         }
                     }
                     catch (Exception ex)
                     {
                         txt_questionname.Focus();
-                        panel_addquestion_warning.Visible = true;
-                        lbl_addquestionwarning.Text = "Something went wrong. Subject is not added </br>" + ex.Message;
+                        panel_addQuestion_warning.Visible = true;
+                        lbl_addQuestionwarning.Text = "Something went wrong. Criteria is not added </br>" + ex.Message;
                     }
                 } //end of using
             }
             else
             {
                 txt_questionname.Focus();
-                panel_addquestion_warning.Visible = true;
-                lbl_addquestionwarning.Text = "You must fill all the requirements";
+                panel_addQuestion_warning.Visible = true;
+                lbl_addQuestionwarning.Text = "You must fill all the requirements";
             }
         }
     }

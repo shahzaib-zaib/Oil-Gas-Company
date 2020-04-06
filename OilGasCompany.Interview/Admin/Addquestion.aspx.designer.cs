@@ -15,13 +15,13 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelquestion control.
+        /// btn_panelQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelquestion;
+        protected global::System.Web.UI.WebControls.Button btn_panelQuestion;
 
         /// <summary>
         /// txt_questionname control.
@@ -132,30 +132,30 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator req_rdo_correctanswer;
 
         /// <summary>
-        /// btn_addquestion control.
+        /// btn_addQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_addquestion;
+        protected global::System.Web.UI.WebControls.Button btn_addQuestion;
 
         /// <summary>
-        /// panel_addquestion_warning control.
+        /// panel_addQuestion_warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addquestion_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_addQuestion_warning;
 
         /// <summary>
-        /// lbl_addquestionwarning control.
+        /// lbl_addQuestionwarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_addquestionwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_addQuestionwarning;
     }
 }
