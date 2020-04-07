@@ -15,255 +15,255 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelexamlist control.
+        /// btn_panelInterviewList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelexamlist;
+        protected global::System.Web.UI.WebControls.Button btn_panelInterviewList;
 
         /// <summary>
-        /// btn_paneladdexam control.
+        /// btn_panelAddInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_paneladdexam;
+        protected global::System.Web.UI.WebControls.Button btn_panelAddInterview;
 
         /// <summary>
-        /// panel_addexam control.
+        /// panel_AddInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addexam;
+        protected global::System.Web.UI.WebControls.Panel panel_AddInterview;
 
         /// <summary>
-        /// drp_categoryexam control.
+        /// drp_CategoryInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_categoryexam;
+        protected global::System.Web.UI.WebControls.DropDownList drp_CategoryInterview;
 
         /// <summary>
-        /// require_drpcategory control.
+        /// require_DrpCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_drpcategory;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_DrpCategory;
 
         /// <summary>
-        /// drp_subjectexam control.
+        /// drp_CriteriaInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_subjectexam;
+        protected global::System.Web.UI.WebControls.DropDownList drp_CriteriaInterview;
 
         /// <summary>
-        /// require_subjecexam control.
+        /// require_CriteriaInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_subjecexam;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_CriteriaInterview;
 
         /// <summary>
-        /// txt_examname control.
+        /// txt_interviewname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_examname;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewname;
 
         /// <summary>
-        /// require_examname control.
+        /// require_InterviewName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_examname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_InterviewName;
 
         /// <summary>
-        /// txt_examdis control.
+        /// txt_interviewdis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_examdis;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewdis;
 
         /// <summary>
-        /// txt_examdate control.
+        /// txt_interviewdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_examdate;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewdate;
 
         /// <summary>
-        /// require_examdate control.
+        /// require_InterviewDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_examdate;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_InterviewDate;
 
         /// <summary>
-        /// txt_examduration control.
+        /// txt_interviewduration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_examduration;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewduration;
 
         /// <summary>
-        /// require_examduration control.
+        /// require_InterviewDuration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_examduration;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_InterviewDuration;
 
         /// <summary>
-        /// requireregular_examduration control.
+        /// requireregular_InterviewDuration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_examduration;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_InterviewDuration;
 
         /// <summary>
-        /// txt_exampassmarks control.
+        /// txt_interviewpassmarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_exampassmarks;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewpassmarks;
 
         /// <summary>
-        /// require_exampassmark control.
+        /// require_InterviewPassMark control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_exampassmark;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_InterviewPassMark;
 
         /// <summary>
-        /// requireregular_exampassmark control.
+        /// requireregular_InterviewPassMark control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_exampassmark;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_InterviewPassMark;
 
         /// <summary>
-        /// txt_exammatotalmarks control.
+        /// txt_interviewmatotalmarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_exammatotalmarks;
+        protected global::System.Web.UI.WebControls.TextBox txt_interviewmatotalmarks;
 
         /// <summary>
-        /// require_exammatotal control.
+        /// require_InterviewMaTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_exammatotal;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_InterviewMaTotal;
 
         /// <summary>
-        /// rege_exammatotal control.
+        /// rege_InterviewMaTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator rege_exammatotal;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rege_InterviewMaTotal;
 
         /// <summary>
-        /// btn_addexam control.
+        /// btn_AddInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_addexam;
+        protected global::System.Web.UI.WebControls.Button btn_AddInterview;
 
         /// <summary>
-        /// panel_addexam_warning control.
+        /// panel_AddInterview_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addexam_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_AddInterview_Warning;
 
         /// <summary>
-        /// lbl_examaddwarning control.
+        /// lbl_InterviewAddWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_examaddwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_InterviewAddWarning;
 
         /// <summary>
-        /// panel_examlist control.
+        /// panel_InterviewList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_examlist;
+        protected global::System.Web.UI.WebControls.Panel panel_InterviewList;
 
         /// <summary>
-        /// grdview_examlist control.
+        /// grdview_InterviewList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdview_examlist;
+        protected global::System.Web.UI.WebControls.GridView grdview_InterviewList;
 
         /// <summary>
-        /// panel_examlist_warning control.
+        /// panel_InterviewList_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_examlist_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_InterviewList_Warning;
 
         /// <summary>
-        /// lbl_examlistwarning control.
+        /// lbl_InterviewListWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_examlistwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_InterviewListWarning;
     }
 }

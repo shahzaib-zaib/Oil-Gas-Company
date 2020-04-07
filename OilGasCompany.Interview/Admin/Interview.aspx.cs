@@ -17,33 +17,33 @@ namespace OilGasCompany.Interview.Admin
         {
             if (!IsPostBack)
             {
-                panel_examlist.Visible = true;
-                panel_addexam.Visible = false;
-                btn_panelexamlist.BackColor = ColorTranslator.FromHtml("#343A40");
-                btn_paneladdexam.BackColor = ColorTranslator.FromHtml("#DC3545");
-                getexamList();
+                panel_InterviewList.Visible = true;
+                panel_AddInterview.Visible = false;
+                btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#343A40");
+                btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#DC3545");
+                getInterviewList();
             }
         }
-        protected void btn_panelexamlist_Click(object sender, EventArgs e)
+        protected void btn_panelInterviewList_Click(object sender, EventArgs e)
         {
-            panel_examlist.Visible = true;
-            panel_addexam.Visible = false;
-            btn_panelexamlist.BackColor = ColorTranslator.FromHtml("#343A40");
-            btn_paneladdexam.BackColor = ColorTranslator.FromHtml("#DC3545");
-            getexamList();
+            panel_InterviewList.Visible = true;
+            panel_AddInterview.Visible = false;
+            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#343A40");
+            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#DC3545");
+            getInterviewList();
         }
-        protected void btn_paneladdexam_Click(object sender, EventArgs e)
+        protected void btn_panelAddInterview_Click(object sender, EventArgs e)
         {
-            panel_examlist.Visible = false;
-            panel_addexam.Visible = true;
-            btn_panelexamlist.BackColor = ColorTranslator.FromHtml("#DC3545");
-            btn_paneladdexam.BackColor = ColorTranslator.FromHtml("#343A40");
-            get_categorydrp();
-            get_subjectdrp();
+            panel_InterviewList.Visible = false;
+            panel_AddInterview.Visible = true;
+            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#DC3545");
+            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#343A40");
+            get_CategoryDrp();
+            get_CriteriaDrp();
 
         }
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString; //string of connection
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString; //string of connection
 
         // this is for the add exam 
         protected void btn_addexam_Click(object sender, EventArgs e)
@@ -52,67 +52,67 @@ namespace OilGasCompany.Interview.Admin
             {
                 using (SqlConnection con = new SqlConnection(s))
                 {
-                    SqlCommand cmd = new SqlCommand("spAddexam", con);
+                    SqlCommand cmd = new SqlCommand("spAddInterview", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@examname", txt_examname.Text);
-                    cmd.Parameters.AddWithValue("@examdis", txt_examdis.Text);
-                    cmd.Parameters.AddWithValue("@examdate", txt_examdate.Text);
-                    cmd.Parameters.AddWithValue("@examduration", txt_examduration.Text);
-                    cmd.Parameters.AddWithValue("@exampassmarks", txt_exampassmarks.Text);
-                    cmd.Parameters.AddWithValue("@exammarks", txt_exammatotalmarks.Text);
-                    cmd.Parameters.AddWithValue("@examsubjectfid", drp_subjectexam.SelectedValue);
-                    cmd.Parameters.AddWithValue("@examcategoryfid", drp_categoryexam.SelectedValue);
+                    cmd.Parameters.AddWithValue("@interviewname", txt_interviewname.Text);
+                    cmd.Parameters.AddWithValue("@interviewdis", txt_interviewdis.Text);
+                    cmd.Parameters.AddWithValue("@interviewdate", txt_interviewdate.Text);
+                    cmd.Parameters.AddWithValue("@interviewduration", txt_interviewduration.Text);
+                    cmd.Parameters.AddWithValue("@interviewpassmarks", txt_interviewpassmarks.Text);
+                    cmd.Parameters.AddWithValue("@interviewmarks", txt_interviewmatotalmarks.Text);
+                    cmd.Parameters.AddWithValue("@interviewcriteriafid", drp_CriteriaInterview.SelectedValue);
+                    cmd.Parameters.AddWithValue("@interviewcategoryfid", drp_CategoryInterview.SelectedValue);
                     try
                     {
                         con.Open();
                         int i = cmd.ExecuteNonQuery();
                         if (i > 0)
                         {
-                            Response.Redirect("~/admin/exam.aspx");
+                            Response.Redirect("~/Admin/Interview.aspx");
                         }
                         else
                         {
-                            txt_examname.Focus();
-                            panel_addexam_warning.Visible = true;
-                            lbl_examaddwarning.Text = "Try again. Subject is not added";
+                            txt_interviewname.Focus();
+                            panel_AddInterview_Warning.Visible = true;
+                            lbl_InterviewAddWarning.Text = "Try again. Criteria is not added";
                         }
                     }
                     catch (Exception ex)
                     {
-                        txt_examname.Focus();
-                        panel_addexam_warning.Visible = true;
-                        lbl_examaddwarning.Text = "Something went wrong. Subject is not added </br>" + ex.Message;
+                        txt_interviewname.Focus();
+                        panel_AddInterview_Warning.Visible = true;
+                        lbl_InterviewAddWarning.Text = "Something went wrong. Criteria is not added </br>" + ex.Message;
                     }
                 } //end of using
             }
             else
             {
-                txt_examname.Focus();
-                panel_addexam_warning.Visible = true;
-                lbl_examaddwarning.Text = "You must fill all the requirements";
+                txt_interviewname.Focus();
+                panel_AddInterview_Warning.Visible = true;
+                lbl_InterviewAddWarning.Text = "You must fill all the requirements";
             }
 
         }
         // for deleting
-        protected void grdview_examlist_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void grdview_InterviewList_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName == "deleteexam")
+            if (e.CommandName == "deleteinterview")
             {
-                deleteexam(Convert.ToInt32(e.CommandArgument));
-                getexamList();
+                deleteInterview(Convert.ToInt32(e.CommandArgument));
+                getInterviewList();
             }
         }
         //When paging
-        protected void grdview_examlist_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void grdview_InterviewList_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            grdview_examlist.PageIndex = e.NewPageIndex;
-            getexamList();
+            grdview_InterviewList.PageIndex = e.NewPageIndex;
+            getInterviewList();
         }
 
 
 
         //method for category dropdown
-        public void get_categorydrp()
+        public void get_CategoryDrp()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
@@ -120,48 +120,48 @@ namespace OilGasCompany.Interview.Admin
                 try
                 {
                     con.Open();
-                    drp_categoryexam.DataSource = cmd.ExecuteReader();
-                    drp_categoryexam.DataBind();
+                    drp_CategoryInterview.DataSource = cmd.ExecuteReader();
+                    drp_CategoryInterview.DataBind();
                     ListItem li = new ListItem("Select category", "-1");
-                    drp_categoryexam.Items.Insert(0, li);
+                    drp_CategoryInterview.Items.Insert(0, li);
                 }
                 catch (Exception ex)
                 {
-                    txt_examname.Focus();
-                    panel_addexam_warning.Visible = true;
-                    lbl_examaddwarning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    txt_interviewname.Focus();
+                    panel_AddInterview_Warning.Visible = true;
+                    lbl_InterviewAddWarning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }
 
         //method for subject dropdown
-        public void get_subjectdrp()
+        public void get_CriteriaDrp()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select subject_id, subject_name from subject", con);
+                SqlCommand cmd = new SqlCommand("select criteria_id, criteria_name from Criteria", con);
                 try
                 {
                     con.Open();
-                    drp_subjectexam.DataSource = cmd.ExecuteReader();
-                    drp_subjectexam.DataBind();
-                    ListItem li = new ListItem("Select subject", "-1");
-                    drp_subjectexam.Items.Insert(0, li);
+                    drp_CriteriaInterview.DataSource = cmd.ExecuteReader();
+                    drp_CriteriaInterview.DataBind();
+                    ListItem li = new ListItem("Select Criteria", "-1");
+                    drp_CriteriaInterview.Items.Insert(0, li);
                 }
                 catch (Exception ex)
                 {
-                    txt_examname.Focus();
-                    panel_addexam_warning.Visible = true;
-                    lbl_examaddwarning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    txt_interviewname.Focus();
+                    panel_AddInterview_Warning.Visible = true;
+                    lbl_InterviewAddWarning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }
         //method for examlist 
-        public void getexamList()
+        public void getInterviewList()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spExamList", con);
+                SqlCommand cmd = new SqlCommand("spInterviewList", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 try
                 {
@@ -172,44 +172,44 @@ namespace OilGasCompany.Interview.Admin
                         using (DataTable dtatble = new DataTable())
                         {
                             ad.Fill(dtatble);
-                            grdview_examlist.DataSource = dtatble;
-                            grdview_examlist.DataBind();
+                            grdview_InterviewList.DataSource = dtatble;
+                            grdview_InterviewList.DataBind();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examlist_warning.Visible = true;
-                    lbl_examlistwarning.Text = "Something went wrong </br>" + ex.Message;
+                    panel_InterviewList_Warning.Visible = true;
+                    lbl_InterviewListWarning.Text = "Something went wrong </br>" + ex.Message;
                 }
             }
         }
         //Method for deleting category
-        public void deleteexam(int id)
+        public void deleteInterview(int id)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("delete exam where exam_id = @examid", con);
-                cmd.Parameters.AddWithValue("@examid", id);
+                SqlCommand cmd = new SqlCommand("delete Interview where interview_id = @interviewid", con);
+                cmd.Parameters.AddWithValue("@interviewid", id);
                 try
                 {
                     con.Open();
                     int i = (int)cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        Response.Redirect("~/admin/exam.aspx");
+                        Response.Redirect("~/Admin/Interview.aspx");
                         Response.Write("Delete Succesfully");
                     }
                     else
                     {
-                        panel_examlist_warning.Visible = true;
-                        lbl_examlistwarning.Text = "Something went wrong. Can't delete now";
+                        panel_InterviewList_Warning.Visible = true;
+                        lbl_InterviewListWarning.Text = "Something went wrong. Can't delete now";
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examlist_warning.Visible = true;
-                    lbl_examlistwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_InterviewList_Warning.Visible = true;
+                    lbl_InterviewListWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
 
             }
