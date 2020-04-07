@@ -20,30 +20,30 @@ namespace OilGasCompany.Interview.Admin
 
                 if (eid == null)
                 {
-                    Response.Redirect("~/admin/exam.aspx");
+                    Response.Redirect("~/Admin/Interview.aspx");
                 }
 
-                getexam_details(Convert.ToInt32(eid));
+                getInterview_Details(Convert.ToInt32(eid));
             }
         }
-        public void getexam_details(int id)
+        public void getInterview_Details(int id)
         {
-            string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+            string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spExamListDetails", con);
+                SqlCommand cmd = new SqlCommand("spInterviewListDetails", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@exam_id", id);
+                cmd.Parameters.AddWithValue("@interview_id", id);
                 try
                 {
                     con.Open();
-                    exam_details.DataSource = cmd.ExecuteReader();
-                    exam_details.DataBind();
+                    Interview_Details.DataSource = cmd.ExecuteReader();
+                    Interview_Details.DataBind();
                 }
                 catch (Exception ex)
                 {
-                    panel_examdetails_warning.Visible = true;
-                    lbl_examdetailswarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
+                    panel_InterviewDetails_Warning.Visible = true;
+                    lbl_InterviewDetailsWarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
                 }
 
             }

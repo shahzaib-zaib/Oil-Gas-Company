@@ -6,49 +6,49 @@
         <div class="card">
             <%--Button For edit--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_detailsexam" runat="server" Text="Details Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+                <asp:Button ID="btn_DetailsInterview" runat="server" Text="Details Criteria" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
             <div class="card mb-3">
                 <div class="card-body">
                     <%-- For showing the details --%>
                     <div class="table table-responsive">
-                        <asp:DetailsView ID="exam_details" runat="server" Height="50px" GridLines="None" CssClass="table table-bordered" AutoGenerateRows="False">
+                        <asp:DetailsView ID="Interview_Details" runat="server" Height="50px" GridLines="None" CssClass="table table-bordered" AutoGenerateRows="False">
                             <Fields>
-                                <asp:BoundField DataField="category_name" HeaderText="Category" NullDisplayText="The exam is not under any category">
+                                <asp:BoundField DataField="category_name" HeaderText="Category" NullDisplayText="The interview is not under any category">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="subject_name" HeaderText="Subject" NullDisplayText="The exam is not under any subject">
+                                <asp:BoundField DataField="criteria_name" HeaderText="Criteria" NullDisplayText="The interview is not under any criteria">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_name" HeaderText="Exam Name">
+                                <asp:BoundField DataField="interview_name" HeaderText="Interview Name">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_description" HeaderText="Exam Discription" NullDisplayText="No Discription">
+                                <asp:BoundField DataField="interview_description" HeaderText="Interview Discription" NullDisplayText="No Discription">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_date" HeaderText="Exam Date" DataFormatString="{0:d}">
+                                <asp:BoundField DataField="interview_date" HeaderText="Interview Date" DataFormatString="{0:d}">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_duration" HeaderText="Exam Duration">
+                                <asp:BoundField DataField="interview_duration" HeaderText="Interview Duration">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exampass_marks" HeaderText="Exam Pass Marks">
+                                <asp:BoundField DataField="interviewpass_marks" HeaderText="Interview Pass Marks">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_marks" HeaderText="Total Marks" NullDisplayText="No total marks">
+                                <asp:BoundField DataField="interview_marks" HeaderText="Total Marks" NullDisplayText="No total marks">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
                             </Fields>
                             <FooterTemplate>
-                            <asp:Button ID="btn_backexam" runat="server" Text="Back TO Exam" CssClass="btn btn-info" BackColor="#343A40" BorderStyle="None" ForeColor="White" PostBackUrl="~/admin/exam.aspx"/>
+                            <asp:Button ID="btn_CackInterview" runat="server" Text="Back TO Interview" CssClass="btn btn-info" BackColor="#343A40" BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/Interview.aspx"/>
                             </FooterTemplate>
                             <HeaderStyle CssClass="text-center" />
                         </asp:DetailsView>
-                        <asp:Panel ID="panel_examdetails_warning" runat="server" Visible="false">
+                        <asp:Panel ID="panel_InterviewDetails_Warning" runat="server" Visible="false">
                             <div class="card-footer">
                                 <br />
                                 <div class="alert alert-danger text-center">
-                                    <asp:Label ID="lbl_examdetailswarning" runat="server" />
+                                    <asp:Label ID="lbl_InterviewDetailsWarning" runat="server" />
                                 </div>
                             </div>
                         </asp:Panel>
