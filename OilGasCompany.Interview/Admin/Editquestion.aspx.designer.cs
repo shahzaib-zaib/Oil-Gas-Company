@@ -15,31 +15,31 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_paneleditquestion control.
+        /// btn_panelEditQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_paneleditquestion;
+        protected global::System.Web.UI.WebControls.Button btn_panelEditQuestion;
 
         /// <summary>
-        /// drp_editexam control.
+        /// drp_EditInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_editexam;
+        protected global::System.Web.UI.WebControls.DropDownList drp_EditInterview;
 
         /// <summary>
-        /// require_editexam control.
+        /// require_EditInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editexam;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditInterview;
 
         /// <summary>
         /// txt_editquestionname control.
@@ -51,13 +51,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_editquestionname;
 
         /// <summary>
-        /// require_editquestionname control.
+        /// require_EditQuestionName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editquestionname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditQuestionName;
 
         /// <summary>
         /// txt_editoptionone control.
@@ -69,13 +69,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_editoptionone;
 
         /// <summary>
-        /// require_editop1 control.
+        /// require_EditOp1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editop1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditOp1;
 
         /// <summary>
         /// txt_editoptiontwo control.
@@ -87,13 +87,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_editoptiontwo;
 
         /// <summary>
-        /// require_editop2 control.
+        /// require_EditOp2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editop2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditOp2;
 
         /// <summary>
         /// txt_edtoptionthree control.
@@ -105,13 +105,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_edtoptionthree;
 
         /// <summary>
-        /// require_editop3 control.
+        /// require_EditOp3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editop3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditOp3;
 
         /// <summary>
         /// txt_editoptionfour control.
@@ -123,57 +123,57 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_editoptionfour;
 
         /// <summary>
-        /// require_editop4 control.
+        /// require_EditOp4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editop4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditOp4;
 
         /// <summary>
-        /// rdo_editcorrectanswer control.
+        /// rdo_EditCorrectAnswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rdo_editcorrectanswer;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdo_EditCorrectAnswer;
 
         /// <summary>
-        /// req_rdo_editcorrectanswer control.
+        /// req_rdo_EditCorrectAnswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator req_rdo_editcorrectanswer;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator req_rdo_EditCorrectAnswer;
 
         /// <summary>
-        /// btn_editquestion control.
+        /// btn_EditQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_editquestion;
+        protected global::System.Web.UI.WebControls.Button btn_EditQuestion;
 
         /// <summary>
-        /// panel_editquestion_warning control.
+        /// panel_EditQuestion_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_editquestion_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_EditQuestion_Warning;
 
         /// <summary>
-        /// lbl_editquestionwarning control.
+        /// lbl_EditQuestionWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_editquestionwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_EditQuestionWarning;
     }
 }

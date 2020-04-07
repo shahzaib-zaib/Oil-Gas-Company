@@ -19,25 +19,25 @@ namespace OilGasCompany.Interview.Admin
             {
                 if (qid == null)
                 {
-                    Response.Redirect("~/admin/question.aspx");
+                    Response.Redirect("~/Admin/Question.aspx");
                 }
-                get_editexamquestion(Convert.ToInt32(qid));
-                get_editexamdrp();
+                get_EditInterviewQuestion(Convert.ToInt32(qid));
+                get_EditInterviewDrp();
                 // get_editsubjectdrp();
             }
         }
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
 
-        protected void btn_editquestion_Click(object sender, EventArgs e)
+        protected void btn_EditQuestion_Click(object sender, EventArgs e)
         {
             string qid = Request.QueryString["qid"];
             if (IsValid)
             {
-                string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+                string cs = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(cs))
                 {
-                    SqlCommand cmd = new SqlCommand("spEditquestion", con);
+                    SqlCommand cmd = new SqlCommand("spEditQuestion", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@questionid", Convert.ToInt32(qid));
                     cmd.Parameters.AddWithValue("@questionname", txt_editquestionname.Text);
@@ -45,45 +45,45 @@ namespace OilGasCompany.Interview.Admin
                     cmd.Parameters.AddWithValue("@optiontwo", txt_editoptiontwo.Text);
                     cmd.Parameters.AddWithValue("@optionthree", txt_edtoptionthree.Text);
                     cmd.Parameters.AddWithValue("@optionfour", txt_editoptionfour.Text);
-                    cmd.Parameters.AddWithValue("@questionanswer", rdo_editcorrectanswer.SelectedValue);
-                    cmd.Parameters.AddWithValue("@examfid", drp_editexam.SelectedValue);
+                    cmd.Parameters.AddWithValue("@questionanswer", rdo_EditCorrectAnswer.SelectedValue);
+                    cmd.Parameters.AddWithValue("@interviewfid", drp_EditInterview.SelectedValue);
                     try
                     {
                         con.Open();
                         int i = (int)cmd.ExecuteNonQuery();
                         if (i > 0)
                         {
-                            Response.Redirect("~/admin/question.aspx");
+                            Response.Redirect("~/Admin/Question.aspx");
                         }
                         else
                         {
                             txt_editquestionname.Focus();
-                            panel_editquestion_warning.Visible = true;
-                            lbl_editquestionwarning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
+                            panel_EditQuestion_Warning.Visible = true;
+                            lbl_EditQuestionWarning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
                         }
                     }
                     catch (Exception ex)
                     {
                         txt_editquestionname.Focus();
-                        panel_editquestion_warning.Visible = true;
-                        lbl_editquestionwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                        panel_EditQuestion_Warning.Visible = true;
+                        lbl_EditQuestionWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                     }
                 } // end of using 
             }
             else
             {
                 txt_editquestionname.Focus();
-                panel_editquestion_warning.Visible = true;
-                lbl_editquestionwarning.Text = "You must fill all the requirements";
+                panel_EditQuestion_Warning.Visible = true;
+                lbl_EditQuestionWarning.Text = "You must fill all the requirements";
             }
         }
         //method for editfill
-        public void get_editexamquestion(int id)
+        public void get_EditInterviewQuestion(int id)
         {
 
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spEditquestionfill", con);
+                SqlCommand cmd = new SqlCommand("spEditQuestionFill", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@questionid", id);
                 try
@@ -102,30 +102,30 @@ namespace OilGasCompany.Interview.Admin
                 }
                 catch (Exception ex)
                 {
-                    panel_editquestion_warning.Visible = true;
-                    lbl_editquestionwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_EditQuestion_Warning.Visible = true;
+                    lbl_EditQuestionWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
         //method for category dropdown
-        public void get_editexamdrp()
+        public void get_EditInterviewDrp()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from exam", con);
+                SqlCommand cmd = new SqlCommand("select * from Interview", con);
                 try
                 {
                     con.Open();
-                    drp_editexam.DataSource = cmd.ExecuteReader();
-                    drp_editexam.DataBind();
+                    drp_EditInterview.DataSource = cmd.ExecuteReader();
+                    drp_EditInterview.DataBind();
                     ListItem li = new ListItem("Select category", "-1");
-                    drp_editexam.Items.Insert(0, li);
+                    drp_EditInterview.Items.Insert(0, li);
                 }
                 catch (Exception ex)
                 {
                     txt_editquestionname.Focus();
-                    panel_editquestion_warning.Visible = true;
-                    lbl_editquestionwarning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    panel_EditQuestion_Warning.Visible = true;
+                    lbl_EditQuestionWarning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }
