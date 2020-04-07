@@ -15,201 +15,201 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_paneleditexam control.
+        /// btn_panelEditInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_paneleditexam;
+        protected global::System.Web.UI.WebControls.Button btn_panelEditInterview;
 
         /// <summary>
-        /// drp_editcategoryexam control.
+        /// drp_EditCategoryInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_editcategoryexam;
+        protected global::System.Web.UI.WebControls.DropDownList drp_EditCategoryInterview;
 
         /// <summary>
-        /// require_drpeditcategory control.
+        /// require_DrpeEitCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_drpeditcategory;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_DrpeEitCategory;
 
         /// <summary>
-        /// drp_editsubjectexam control.
+        /// drp_EditCriteriaInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_editsubjectexam;
+        protected global::System.Web.UI.WebControls.DropDownList drp_EditCriteriaInterview;
 
         /// <summary>
-        /// require_editsubjecexam control.
+        /// require_EditCriteriaInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editsubjecexam;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditCriteriaInterview;
 
         /// <summary>
-        /// txt_editexamname control.
+        /// txt_editinterviewname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editexamname;
+        protected global::System.Web.UI.WebControls.TextBox txt_editinterviewname;
 
         /// <summary>
-        /// require_editexamname control.
+        /// require_EditInterviewName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editexamname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditInterviewName;
 
         /// <summary>
-        /// txt_editexamdis control.
+        /// txt_editinterviewdis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editexamdis;
+        protected global::System.Web.UI.WebControls.TextBox txt_editinterviewdis;
 
         /// <summary>
-        /// txt_editexamdate control.
+        /// txt_editinterviewdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editexamdate;
+        protected global::System.Web.UI.WebControls.TextBox txt_editinterviewdate;
 
         /// <summary>
-        /// require_editexamdate control.
+        /// require_EditInterviewDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editexamdate;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditInterviewDate;
 
         /// <summary>
-        /// txt_editexamduration control.
+        /// txt_editinterviewduration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editexamduration;
+        protected global::System.Web.UI.WebControls.TextBox txt_editinterviewduration;
 
         /// <summary>
-        /// require_editexamduration control.
+        /// require_editinterviewduration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editexamduration;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editinterviewduration;
 
         /// <summary>
-        /// requireregular_editexamduration control.
+        /// requireregular_EditInterviewDuration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_editexamduration;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_EditInterviewDuration;
 
         /// <summary>
-        /// txt_editpassexammarks control.
+        /// txt_editpassinterviewmarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editpassexammarks;
+        protected global::System.Web.UI.WebControls.TextBox txt_editpassinterviewmarks;
 
         /// <summary>
-        /// require_editpassexammark control.
+        /// require_EditPassInterviewMark control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editpassexammark;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditPassInterviewMark;
 
         /// <summary>
-        /// requireregular_editpassexammark control.
+        /// requireregular_editpassinterviewmark control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_editpassexammark;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator requireregular_editpassinterviewmark;
 
         /// <summary>
-        /// txt_editexamtotalmarks control.
+        /// txt_editinterviewtotalmarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_editexamtotalmarks;
+        protected global::System.Web.UI.WebControls.TextBox txt_editinterviewtotalmarks;
 
         /// <summary>
-        /// require_editexammatotalmarks control.
+        /// require_EditInterviewMaTotalMarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_editexammatotalmarks;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_EditInterviewMaTotalMarks;
 
         /// <summary>
-        /// reg_editexammatotalmarks control.
+        /// reg_EditInterviewMaTotalMarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator reg_editexammatotalmarks;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator reg_EditInterviewMaTotalMarks;
 
         /// <summary>
-        /// btn_editexam control.
+        /// btn_EditInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_editexam;
+        protected global::System.Web.UI.WebControls.Button btn_EditInterview;
 
         /// <summary>
-        /// panel_editexam_warning control.
+        /// panel_EditInterview_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_editexam_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_EditInterview_Warning;
 
         /// <summary>
-        /// lbl_exameditwarning control.
+        /// lbl_InterviewEditWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_exameditwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_InterviewEditWarning;
     }
 }

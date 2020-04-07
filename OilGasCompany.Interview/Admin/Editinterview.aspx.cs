@@ -19,139 +19,139 @@ namespace OilGasCompany.Interview.Admin
             {
                 if (eid == null)
                 {
-                    Response.Redirect("~/admin/exam.aspx");
+                    Response.Redirect("~/Admin/Interview.aspx");
                 }
-                get_editexamfill(Convert.ToInt32(eid));
-                get_editcategorydrp();
-                get_editsubjectdrp();
+                get_EditInterviewFill(Convert.ToInt32(eid));
+                get_EditCategoryDrp();
+                get_EditCriteriaDrp();
             }
         }
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //edit button to edit exam
-        protected void btn_editexam_Click(object sender, EventArgs e)
+        protected void btn_EditInterview_Click(object sender, EventArgs e)
         {
             string eid = Request.QueryString["eid"];
             if (IsValid)
             {
-                string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+                string cs = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(cs))
                 {
-                    SqlCommand cmd = new SqlCommand("spEditexam", con);
+                    SqlCommand cmd = new SqlCommand("spEditInterview", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@examid", Convert.ToInt32(eid));
-                    cmd.Parameters.AddWithValue("@examname", txt_editexamname.Text);
-                    cmd.Parameters.AddWithValue("@examdiscription", txt_editexamdis.Text);
-                    cmd.Parameters.AddWithValue("@examdate", txt_editexamdate.Text);
-                    cmd.Parameters.AddWithValue("@examduration", txt_editexamduration.Text);
-                    cmd.Parameters.AddWithValue("@exampassmarks", txt_editpassexammarks.Text);
-                    cmd.Parameters.AddWithValue("@examnmarks", txt_editexamtotalmarks.Text);
-                    cmd.Parameters.AddWithValue("@categoryfid", drp_editcategoryexam.SelectedValue);
-                    cmd.Parameters.AddWithValue("@subjectfid", drp_editsubjectexam.SelectedValue);
+                    cmd.Parameters.AddWithValue("@interviewid", Convert.ToInt32(eid));
+                    cmd.Parameters.AddWithValue("@interviewname", txt_editinterviewname.Text);
+                    cmd.Parameters.AddWithValue("@interviewdiscription", txt_editinterviewdis.Text);
+                    cmd.Parameters.AddWithValue("@interviewdate", txt_editinterviewdate.Text);
+                    cmd.Parameters.AddWithValue("@interviewduration", txt_editinterviewduration.Text);
+                    cmd.Parameters.AddWithValue("@interviewpassmarks", txt_editpassinterviewmarks.Text);
+                    cmd.Parameters.AddWithValue("@interviewnmarks", txt_editinterviewtotalmarks.Text);
+                    cmd.Parameters.AddWithValue("@categoryfid", drp_EditCategoryInterview.SelectedValue);
+                    cmd.Parameters.AddWithValue("@criteriafid", drp_EditCriteriaInterview.SelectedValue);
                     try
                     {
                         con.Open();
                         int i = (int)cmd.ExecuteNonQuery();
                         if (i > 0)
                         {
-                            Response.Redirect("~/admin/exam.aspx");
+                            Response.Redirect("~/Admin/Interview.aspx");
                         }
                         else
                         {
-                            txt_editexamname.Focus();
-                            panel_editexam_warning.Visible = true;
-                            lbl_exameditwarning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
+                            txt_editinterviewname.Focus();
+                            panel_EditInterview_Warning.Visible = true;
+                            lbl_InterviewEditWarning.Text = "Something went wrong. Can't update. Please try after sometime later</br> ";
                         }
                     }
                     catch (Exception ex)
                     {
-                        txt_editexamname.Focus();
-                        panel_editexam_warning.Visible = true;
-                        lbl_exameditwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                        txt_editinterviewname.Focus();
+                        panel_EditInterview_Warning.Visible = true;
+                        lbl_InterviewEditWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                     }
                 } // end of using 
             }
             else
             {
-                txt_editexamname.Focus();
-                panel_editexam_warning.Visible = true;
-                lbl_exameditwarning.Text = "You must fill all the requirements";
+                txt_editinterviewname.Focus();
+                panel_EditInterview_Warning.Visible = true;
+                lbl_InterviewEditWarning.Text = "You must fill all the requirements";
             }
 
         }
 
         //method for editfill
-        public void get_editexamfill(int id)
+        public void get_EditInterviewFill(int id)
         {
 
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spEditexamfill", con);
+                SqlCommand cmd = new SqlCommand("spEditInterviewFill", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@examid", id);
+                cmd.Parameters.AddWithValue("@interviewid", id);
                 try
                 {
                     con.Open();
                     SqlDataReader rd = cmd.ExecuteReader();
                     while (rd.Read())
                     {
-                        txt_editexamname.Text = rd["exam_name"].ToString();
-                        txt_editexamdis.Text = rd["exam_description"].ToString();
-                        txt_editexamduration.Text = rd["exam_duration"].ToString();
-                        txt_editpassexammarks.Text = rd["exampass_marks"].ToString();
-                        txt_editexamtotalmarks.Text = rd["exam_marks"].ToString();
+                        txt_editinterviewname.Text = rd["interview_name"].ToString();
+                        txt_editinterviewdis.Text = rd["interview_description"].ToString();
+                        txt_editinterviewduration.Text = rd["interview_duration"].ToString();
+                        txt_editpassinterviewmarks.Text = rd["interviewpass_marks"].ToString();
+                        txt_editinterviewtotalmarks.Text = rd["interview_marks"].ToString();
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_editexam_warning.Visible = true;
-                    lbl_exameditwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_EditInterview_Warning.Visible = true;
+                    lbl_InterviewEditWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
 
         //method for category dropdown
-        public void get_editcategorydrp()
+        public void get_EditCategoryDrp()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from category", con);
+                SqlCommand cmd = new SqlCommand("select * from Category", con);
                 try
                 {
                     con.Open();
-                    drp_editcategoryexam.DataSource = cmd.ExecuteReader();
-                    drp_editcategoryexam.DataBind();
-                    ListItem li = new ListItem("Select category", "-1");
-                    drp_editcategoryexam.Items.Insert(0, li);
+                    drp_EditCategoryInterview.DataSource = cmd.ExecuteReader();
+                    drp_EditCategoryInterview.DataBind();
+                    ListItem li = new ListItem("Select Category", "-1");
+                    drp_EditCategoryInterview.Items.Insert(0, li);
                 }
                 catch (Exception ex)
                 {
-                    txt_editexamname.Focus();
-                    panel_editexam_warning.Visible = true;
-                    lbl_exameditwarning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    txt_editinterviewname.Focus();
+                    panel_EditInterview_Warning.Visible = true;
+                    lbl_InterviewEditWarning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }
 
         //method for subject dropdown
-        public void get_editsubjectdrp()
+        public void get_EditCriteriaDrp()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select subject_id, subject_name from subject", con);
+                SqlCommand cmd = new SqlCommand("select criteria_id, criteria_name from Criteria", con);
                 try
                 {
                     con.Open();
-                    drp_editsubjectexam.DataSource = cmd.ExecuteReader();
-                    drp_editsubjectexam.DataBind();
-                    ListItem li = new ListItem("Select subject", "-1");
-                    drp_editsubjectexam.Items.Insert(0, li);
+                    drp_EditCriteriaInterview.DataSource = cmd.ExecuteReader();
+                    drp_EditCriteriaInterview.DataBind();
+                    ListItem li = new ListItem("Select Criteria", "-1");
+                    drp_EditCriteriaInterview.Items.Insert(0, li);
                 }
                 catch (Exception ex)
                 {
-                    txt_editexamname.Focus();
-                    panel_editexam_warning.Visible = true;
-                    lbl_exameditwarning.Text = "Something went wrong. Try again </br>" + ex.Message;
+                    txt_editinterviewname.Focus();
+                    panel_EditInterview_Warning.Visible = true;
+                    lbl_InterviewEditWarning.Text = "Something went wrong. Try again </br>" + ex.Message;
                 }
             }
         }
