@@ -15,48 +15,48 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// lbltotalexam control.
+        /// lblTotalInterview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotalexam;
+        protected global::System.Web.UI.WebControls.Label lblTotalInterview;
 
         /// <summary>
-        /// lbltotalquestion control.
+        /// lblTotalQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotalquestion;
+        protected global::System.Web.UI.WebControls.Label lblTotalQuestion;
 
         /// <summary>
-        /// lbltotalstudents control.
+        /// lblTotalCandidates control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotalstudents;
+        protected global::System.Web.UI.WebControls.Label lblTotalCandidates;
 
         /// <summary>
-        /// panel_index_warning control.
+        /// panel_Index_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_index_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_Index_Warning;
 
         /// <summary>
-        /// lbl_indexwarning control.
+        /// lbl_IndexWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_indexwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_IndexWarning;
     }
 }

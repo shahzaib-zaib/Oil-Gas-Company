@@ -12,9 +12,9 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lbltotalexam" runat="server"></asp:Label> exams</div>
+                <div class="mr-5">We have total <asp:Label ID="lblTotalInterview" runat="server"></asp:Label> Interviews</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="exam.aspx">
+            <a class="card-footer text-white clearfix small z-1" href="Interview.aspx">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fa fa-angle-right"></i>
@@ -28,9 +28,9 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lbltotalquestion" runat="server"></asp:Label> questions</div>
+                <div class="mr-5">We have total <asp:Label ID="lblTotalQuestion" runat="server"></asp:Label> Questions</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="question.aspx">
+            <a class="card-footer text-white clearfix small z-1" href="Question.aspx">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fa fa-angle-right"></i>
@@ -44,9 +44,9 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lbltotalstudents" runat="server"></asp:Label> students</div>
+                <div class="mr-5">We have total <asp:Label ID="lblTotalCandidates" runat="server"></asp:Label> Canidates</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="studentList.aspx">
+            <a class="card-footer text-white clearfix small z-1" href="CanidateList.aspx">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fa fa-angle-right"></i>
@@ -57,11 +57,11 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <asp:Panel ID="panel_index_warning" runat="server" Visible="false">
+                <asp:Panel ID="panel_Index_Warning" runat="server" Visible="false">
                     <div class="card-footer">
                         <br />
                         <div class="alert alert-danger text-center">
-                            <asp:Label ID="lbl_indexwarning" runat="server" />
+                            <asp:Label ID="lbl_IndexWarning" runat="server" />
                         </div>
                     </div>
                 </asp:Panel>

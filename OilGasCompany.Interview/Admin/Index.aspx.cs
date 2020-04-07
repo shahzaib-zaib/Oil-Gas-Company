@@ -13,57 +13,57 @@ namespace OilGasCompany.Interview.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            gettotalexam();
-            gettotalquestion();
-            gettotalstudents();
+            getTotalInterview();
+            getTotalQuestion();
+            getTotalCandidates();
         }
 
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString; //calling the connection string
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString; //calling the connection string
 
         //method for getting all the exam 
-        public void gettotalexam()
+        public void getTotalInterview()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select count(exam_id) from exam", con);
+                SqlCommand cmd = new SqlCommand("select count(interview_id) from Interview", con);
                 try
                 {
                     con.Open();
                     int i = Convert.ToInt32(cmd.ExecuteScalar());
-                    lbltotalexam.Text = i.ToString();
+                    lblTotalInterview.Text = i.ToString();
 
                 }
                 catch (Exception ex)
                 {
-                    panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_Index_Warning.Visible = true;
+                    lbl_IndexWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
 
         //method for getting all the question 
-        public void gettotalquestion()
+        public void getTotalQuestion()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select count(question_id) from question", con);
+                SqlCommand cmd = new SqlCommand("select count(question_id) from Question", con);
                 try
                 {
                     con.Open();
                     int i = Convert.ToInt32(cmd.ExecuteScalar());
-                    lbltotalquestion.Text = i.ToString();
+                    lblTotalQuestion.Text = i.ToString();
 
                 }
                 catch (Exception ex)
                 {
-                    panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_Index_Warning.Visible = true;
+                    lbl_IndexWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
 
         //method for getting all the students 
-        public void gettotalstudents()
+        public void getTotalCandidates()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
@@ -72,13 +72,13 @@ namespace OilGasCompany.Interview.Admin
                 {
                     con.Open();
                     int i = Convert.ToInt32(cmd.ExecuteScalar());
-                    lbltotalstudents.Text = i.ToString();
+                    lblTotalCandidates.Text = i.ToString();
 
                 }
                 catch (Exception ex)
                 {
-                    panel_index_warning.Visible = true;
-                    lbl_indexwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_Index_Warning.Visible = true;
+                    lbl_IndexWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
