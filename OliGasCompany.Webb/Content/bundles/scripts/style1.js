@@ -1,0 +1,1 @@
+(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"true","rua.cpush":"false","rua.upre":"true","rua.cpre":"true","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-650bcee1-8030-4b72-9c7a-18a5ea608709","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"true"}]);

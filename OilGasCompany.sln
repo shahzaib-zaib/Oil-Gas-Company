@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilGasCompany.Web", "OilGasCompany.Web\OilGasCompany.Web.csproj", "{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilGasCompany.Interview", "OilGasCompany.Interview\OilGasCompany.Interview.csproj", "{00E67B35-17EA-4488-9E12-C467E6204023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliGasCompany.Webb", "OliGasCompany.Webb\OliGasCompany.Webb.csproj", "{5C5B8876-85EF-481F-B8DB-AFBB8234A78C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32FC2F90-B622-4D37-8C1B-F7E523A6BBF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00E67B35-17EA-4488-9E12-C467E6204023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00E67B35-17EA-4488-9E12-C467E6204023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E67B35-17EA-4488-9E12-C467E6204023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E67B35-17EA-4488-9E12-C467E6204023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5B8876-85EF-481F-B8DB-AFBB8234A78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5B8876-85EF-481F-B8DB-AFBB8234A78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5B8876-85EF-481F-B8DB-AFBB8234A78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5B8876-85EF-481F-B8DB-AFBB8234A78C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

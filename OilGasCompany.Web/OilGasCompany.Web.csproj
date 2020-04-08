@@ -168,9 +168,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -212,7 +209,6 @@
     <Content Include="bundles\scripts\vendors.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="Images\49074_50033-1-1200x417.jpg" />
     <Content Include="Images\83267_50059.jpg" />
     <Content Include="Images\89427_50059_resize_2048_4096_keepaspectratio.jpg" />
