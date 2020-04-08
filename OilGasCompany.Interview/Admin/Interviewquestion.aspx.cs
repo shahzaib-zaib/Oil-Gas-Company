@@ -20,36 +20,36 @@ namespace OilGasCompany.Interview.Admin
 
                 if (eid == null)
                 {
-                    Response.Redirect("~/admin/exam.aspx");
+                    Response.Redirect("~/Admin/Interview.aspx");
                 }
-                getexamquestion(Convert.ToInt32(eid));
+                getInterviewQuestion(Convert.ToInt32(eid));
             }
         }
 
-        protected void gridview_examquestion_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gridview_InterviewQuestion_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "deleteexamquestion")
             {
-                deletequestion(Convert.ToInt32(e.CommandArgument));
+                deleteQuestion(Convert.ToInt32(e.CommandArgument));
             }
         }
         //for paging
         protected void gridview_examquestion_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             string eid = Request.QueryString["eid"];
-            gridview_examquestion.PageIndex = e.NewPageIndex;
-            getexamquestion(Convert.ToInt32(eid));
+            gridview_InterviewQuestion.PageIndex = e.NewPageIndex;
+            getInterviewQuestion(Convert.ToInt32(eid));
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //method for getting question for the exam id
-        public void getexamquestion(int id)
+        public void getInterviewQuestion(int id)
         {
 
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spExamquestion", con);
+                SqlCommand cmd = new SqlCommand("spInterviewQuestion", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@examfid", id);
+                cmd.Parameters.AddWithValue("@interviewfid", id);
                 try
                 {
                     con.Open();
@@ -59,26 +59,26 @@ namespace OilGasCompany.Interview.Admin
                         using (DataTable tb = new DataTable())
                         {
                             ad.Fill(tb);
-                            gridview_examquestion.DataSource = tb;
-                            gridview_examquestion.DataBind();
+                            gridview_InterviewQuestion.DataSource = tb;
+                            gridview_InterviewQuestion.DataBind();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examquestion_warning.Visible = true;
-                    lbl_examquestionwarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
+                    panel_InterviewQuestion_Warning.Visible = true;
+                    lbl_InterviewQuestionWarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
                 }
 
             }
         }
 
         //method for deleting question for the question id 
-        public void deletequestion(int id)
+        public void deleteQuestion(int id)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("delete question where question_id = @questionid", con);
+                SqlCommand cmd = new SqlCommand("delete Question where question_id = @questionid", con);
                 cmd.Parameters.AddWithValue("@questionid", id);
                 try
                 {
@@ -86,19 +86,19 @@ namespace OilGasCompany.Interview.Admin
                     int i = (int)cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        Response.Redirect("~/admin/question.aspx");
+                        Response.Redirect("~/Admin/Question.aspx");
                         Response.Write("Delete Succesfully");
                     }
                     else
                     {
-                        panel_examquestion_warning.Visible = true;
-                        lbl_examquestionwarning.Text = "Something went wrong. Can't delete now";
+                        panel_InterviewQuestion_Warning.Visible = true;
+                        lbl_InterviewQuestionWarning.Text = "Something went wrong. Can't delete now";
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examquestion_warning.Visible = true;
-                    lbl_examquestionwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_InterviewQuestion_Warning.Visible = true;
+                    lbl_InterviewQuestionWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
 
             }

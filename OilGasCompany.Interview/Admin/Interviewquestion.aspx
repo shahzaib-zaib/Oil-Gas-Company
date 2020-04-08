@@ -49,7 +49,7 @@
                     <div class="card-footer">
                         <br />
                         <div class="alert alert-danger text-center">
-                            <asp:Label ID="lbl_InterviewQuestionwarning" runat="server" />
+                            <asp:Label ID="lbl_InterviewQuestionWarning" runat="server" />
                         </div>
                     </div>
                 </asp:Panel>

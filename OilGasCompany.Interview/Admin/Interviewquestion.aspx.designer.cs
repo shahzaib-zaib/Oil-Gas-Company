@@ -42,12 +42,12 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.Panel panel_InterviewQuestion_Warning;
 
         /// <summary>
-        /// lbl_InterviewQuestionwarning control.
+        /// lbl_InterviewQuestionWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_InterviewQuestionwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_InterviewQuestionWarning;
     }
 }
