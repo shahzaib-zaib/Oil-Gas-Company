@@ -15,48 +15,48 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelresult control.
+        /// btn_PanelResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelresult;
+        protected global::System.Web.UI.WebControls.Button btn_PanelResult;
 
         /// <summary>
-        /// gridviewspecific control.
+        /// gridViewSpecific control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridviewspecific;
+        protected global::System.Web.UI.WebControls.GridView gridViewSpecific;
 
         /// <summary>
-        /// gridresult control.
+        /// gridResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridresult;
+        protected global::System.Web.UI.WebControls.GridView gridResult;
 
         /// <summary>
-        /// panel_resultshow_warning control.
+        /// panel_ResultShow_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_resultshow_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_ResultShow_Warning;
 
         /// <summary>
-        /// lbl_resultshowwarning control.
+        /// lbl_ResultShowWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_resultshowwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_ResultShowWarning;
     }
 }
