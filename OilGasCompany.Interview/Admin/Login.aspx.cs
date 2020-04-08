@@ -16,16 +16,16 @@ namespace OilGasCompany.Interview.Admin
         {
 
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //for login
-        protected void btn_login_Click(object sender, EventArgs e)
+        protected void btn_Login_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
             {
 
                 using (SqlConnection con = new SqlConnection(s))
                 {
-                    SqlCommand cmd = new SqlCommand("spAdminlogin", con);
+                    SqlCommand cmd = new SqlCommand("spAdminLogin", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@admin_email", txt_email.Text);
                     cmd.Parameters.AddWithValue("@password", txt_pass.Text);
@@ -35,7 +35,7 @@ namespace OilGasCompany.Interview.Admin
                         int value = (int)cmd.ExecuteScalar();
                         if (value == 1)
                         {
-                            if (chk_remember.Checked)
+                            if (chk_Remember.Checked)
                             {
                                 HttpCookie user = new HttpCookie("admin_cookies"); //creating cookie object where user_cookies is cookie name
                                 user["adminemail"] = txt_email.Text; // cookie content
@@ -46,26 +46,26 @@ namespace OilGasCompany.Interview.Admin
                             {
                                 Session["adminemail"] = txt_email.Text;
                             }
-                            Response.Redirect("~/admin/Index.aspx");
+                            Response.Redirect("~/Admin/Index.aspx");
                         }
                         else
                         {
-                            pnl_warning.Visible = true;
-                            lbl_warning.Text = "Use correct email and password</br>";
+                            pnl_Warning.Visible = true;
+                            lbl_Warning.Text = "Use correct email and password</br>";
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        pnl_warning.Visible = true;
-                        lbl_warning.Text = "Something went wrong! Contact your devloper </br>" + ex.Message;
+                        pnl_Warning.Visible = true;
+                        lbl_Warning.Text = "Something went wrong! Contact your devloper </br>" + ex.Message;
                     }
                 }
             }
             else
             {
-                pnl_warning.Visible = true;
-                lbl_warning.Text = "Please fill all the requirements";
+                pnl_Warning.Visible = true;
+                lbl_Warning.Text = "Please fill all the requirements";
             }
 
         }

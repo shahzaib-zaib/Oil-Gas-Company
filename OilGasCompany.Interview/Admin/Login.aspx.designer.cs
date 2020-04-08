@@ -24,22 +24,22 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.HtmlControls.HtmlForm formlogin;
 
         /// <summary>
-        /// pnl_warning control.
+        /// pnl_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnl_warning;
+        protected global::System.Web.UI.WebControls.Panel pnl_Warning;
 
         /// <summary>
-        /// lbl_warning control.
+        /// lbl_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_warning;
+        protected global::System.Web.UI.WebControls.Label lbl_Warning;
 
         /// <summary>
         /// txt_email control.
@@ -78,13 +78,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_pass;
 
         /// <summary>
-        /// rqr_pass control.
+        /// rqr_Pass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqr_pass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqr_Pass;
 
         /// <summary>
         /// txt_repass control.
@@ -105,21 +105,21 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.CompareValidator rqrcopm_pass;
 
         /// <summary>
-        /// chk_remember control.
+        /// chk_Remember control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chk_remember;
+        protected global::System.Web.UI.WebControls.CheckBox chk_Remember;
 
         /// <summary>
-        /// btn_login control.
+        /// btn_Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login;
+        protected global::System.Web.UI.WebControls.Button btn_Login;
     }
 }

@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login - Online exam sytem</title>
+    <title>Login - Online Aptitude Test System</title>
     <!-- Bootstrap core CSS-->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for login-->
-    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../vendor/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -22,10 +22,10 @@
             <div class="card-header">Login</div>
             <div class="card-body">
                 <form runat="server" id="formlogin">
-                    <asp:Panel ID="pnl_warning" runat="server" Visible="false">
+                    <asp:Panel ID="pnl_Warning" runat="server" Visible="false">
                     <div class="form-group card-header text-center">
                         <div class="alert-danger">
-                        <asp:Label ID="lbl_warning" runat="server" Text="Label" CssClass="col-form-label text-center"></asp:Label>
+                        <asp:Label ID="lbl_Warning" runat="server" Text="Label" CssClass="col-form-label text-center"></asp:Label>
                         </div>
                     </div>
                     </asp:Panel>
@@ -38,9 +38,9 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-md-6">
-                                <label for="exampleInputPassword1">Password</label>
+                                <label for="interviewpleInputPassword1">Password</label>
                                 <asp:TextBox ID="txt_pass" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rqr_pass" runat="server" ErrorMessage="Enter password" ControlToValidate="txt_pass" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="rqr_Pass" runat="server" ErrorMessage="Enter password" ControlToValidate="txt_pass" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-6">
                                 <label for="exampleConfirmPassword">Confirm password</label>
@@ -52,11 +52,11 @@
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <asp:CheckBox ID="chk_remember" runat="server" CssClass="form-check-input remembermecustom" />
+                                <asp:CheckBox ID="chk_Remember" runat="server" CssClass="form-check-input remembermecustom" />
                                 Remember Password</label>
                         </div>
                     </div>
-                    <asp:Button ID="btn_login" runat="server" Text="Log In" CssClass="btn btn-primary btn-block" OnClick="btn_login_Click" />
+                    <asp:Button ID="btn_Login" runat="server" Text="Log In" CssClass="btn btn-primary btn-block" OnClick="btn_login_Click" />
                     <div class="text-center">
                         <a class="d-block small" href="forgot-password.aspx">Forgot Password?</a>
                     </div>
