@@ -6,18 +6,18 @@
         <div class="card">
             <%--Button For select edit--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelexamquestion" runat="server" Text="Exam Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+                <asp:Button ID="btn_panelInterviewQuestion" runat="server" Text="Interview Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
             </div>
         </div>
         <div class="card text-center mb-3">
             <div class="card-body">
                 <%-- Examquestion list --%>
                 <div class="table-responsive">
-                    <asp:GridView ID="gridview_examquestion" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateColumns="False" AllowPaging="True" OnPageIndexChanging="gridview_examquestion_PageIndexChanging" OnRowCommand="gridview_examquestion_RowCommand" PageSize="5">
+                    <asp:GridView ID="gridview_InterviewQuestion" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateColumns="False" AllowPaging="True" OnPageIndexChanging="gridview_InterviewQuestion_PageIndexChanging" OnRowCommand="gridview_InterviewQuestion_RowCommand" PageSize="5">
                         <Columns>
-                            <asp:TemplateField HeaderText="Exam Name">
+                            <asp:TemplateField HeaderText="Interview Name">
                                 <ItemTemplate>
-                                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("exam_name") %>'></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("interview_name") %>'></asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Question">
@@ -27,13 +27,13 @@
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Options">
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="btn_detailsexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/detailsexamquestion.aspx?eid=" + Eval("exam_id") %>'>
+                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailsInterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                     </asp:HyperLink>
-                                    <asp:HyperLink ID="btn_editexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/editquestion.aspx?qid=" + Eval("question_id") %>'>
+                                    <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editquestion.aspx?qid=" + Eval("question_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                     </asp:HyperLink>
-                                    <asp:LinkButton ID="btn_deleteexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("question_id") %>' CommandName="deleteexamquestion">
+                                    <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("question_id") %>' CommandName="deleteinterviewquestion">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                     </asp:LinkButton>
                                 </ItemTemplate>
@@ -45,11 +45,11 @@
                         <PagerStyle CssClass="card-footer" HorizontalAlign="Right" />
                     </asp:GridView>
                 </div>
-                <asp:Panel ID="panel_examquestion_warning" runat="server" Visible="false">
+                <asp:Panel ID="panel_InterviewQuestion_Warning" runat="server" Visible="false">
                     <div class="card-footer">
                         <br />
                         <div class="alert alert-danger text-center">
-                            <asp:Label ID="lbl_examquestionwarning" runat="server" />
+                            <asp:Label ID="lbl_InterviewQuestionwarning" runat="server" />
                         </div>
                     </div>
                 </asp:Panel>
