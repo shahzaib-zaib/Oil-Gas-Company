@@ -14,31 +14,31 @@ namespace OilGasCompany.Interview.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string uemail = Request.QueryString["uid"];
+            string candidateemail = Request.QueryString["uid"];
             if (!IsPostBack)
             {
-                if (uemail != null)
+                if (candidateemail != null)
                 {
-                    getspecificresults(uemail);
-                    gridviewspecific.Visible = true;
-                    gridresult.Visible = false;
+                    getSpecificResults(candidateemail);
+                    gridViewSpecific.Visible = true;
+                    gridResult.Visible = false;
                 }
                 else
                 {
-                    getallresults();
-                    gridviewspecific.Visible = false;
-                    gridresult.Visible = true;
+                    getAllResults();
+                    gridViewSpecific.Visible = false;
+                    gridResult.Visible = true;
                 }
 
             }
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //method for get all result
-        public void getallresults()
+        public void getAllResults()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from result left join exam on result.exam_fid = exam.exam_id", con);
+                SqlCommand cmd = new SqlCommand("select * from Result left join Interview on result.interview_fid = interview.interview_id", con);
                 try
                 {
                     con.Open();
@@ -50,13 +50,13 @@ namespace OilGasCompany.Interview.Admin
                             ad.Fill(tb);
                             if (tb != null)
                             {
-                                gridresult.DataSource = tb;
-                                gridresult.DataBind();
+                                gridResult.DataSource = tb;
+                                gridResult.DataBind();
                             }
                             else
                             {
-                                panel_resultshow_warning.Visible = true;
-                                lbl_resultshowwarning.Text = "There is no result right now in this application";
+                                panel_ResultShow_Warning.Visible = true;
+                                lbl_ResultShowWarning.Text = "There is no result right now in this application";
                             }
                         }
                     }
@@ -64,19 +64,19 @@ namespace OilGasCompany.Interview.Admin
                 }
                 catch (Exception ex)
                 {
-                    panel_resultshow_warning.Visible = true;
-                    lbl_resultshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_ResultShow_Warning.Visible = true;
+                    lbl_ResultShowWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
 
         //method for spexific result
 
-        public void getspecificresults(string email)
+        public void getSpecificResults(string email)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from result left join exam on result.exam_fid = exam.exam_id where user_email = @uemail", con);
+                SqlCommand cmd = new SqlCommand("select * from Result left join Interview on result.interview_fid = interview.interview_id where candidate_email = @uemail", con);
                 cmd.Parameters.AddWithValue("@uemail", email);
                 try
                 {
@@ -89,13 +89,13 @@ namespace OilGasCompany.Interview.Admin
                             ad.Fill(tb);
                             if (tb != null)
                             {
-                                gridviewspecific.DataSource = tb;
-                                gridviewspecific.DataBind();
+                                gridViewSpecific.DataSource = tb;
+                                gridViewSpecific.DataBind();
                             }
                             else
                             {
-                                panel_resultshow_warning.Visible = true;
-                                lbl_resultshowwarning.Text = "There is no result right now in this application";
+                                panel_ResultShow_Warning.Visible = true;
+                                lbl_ResultShowWarning.Text = "There is no result right now in this application";
                             }
                         }
                     }
@@ -103,28 +103,28 @@ namespace OilGasCompany.Interview.Admin
                 }
                 catch (Exception ex)
                 {
-                    panel_resultshow_warning.Visible = true;
-                    lbl_resultshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_ResultShow_Warning.Visible = true;
+                    lbl_ResultShowWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
         //for paging
         protected void gridresult_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            gridresult.PageIndex = e.NewPageIndex;
-            getallresults();
-            gridviewspecific.Visible = false;
-            gridresult.Visible = true;
+            gridResult.PageIndex = e.NewPageIndex;
+            getAllResults();
+            gridViewSpecific.Visible = false;
+            gridResult.Visible = true;
         }
 
         // for specific result paging
-        protected void gridviewspecific_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gridViewSpecific_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             string uemail = Request.QueryString["uid"];
-            gridviewspecific.PageIndex = e.NewPageIndex;
-            getspecificresults(uemail);
-            gridviewspecific.Visible = true;
-            gridresult.Visible = false;
+            gridViewSpecific.PageIndex = e.NewPageIndex;
+            getSpecificResults(uemail);
+            gridViewSpecific.Visible = true;
+            gridResult.Visible = false;
         }
     }
 }
