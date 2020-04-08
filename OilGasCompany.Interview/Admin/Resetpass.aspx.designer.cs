@@ -15,13 +15,13 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelreste control.
+        /// btn_PanelReste control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelreste;
+        protected global::System.Web.UI.WebControls.Button btn_PanelReste;
 
         /// <summary>
         /// txt_admipresentpass control.
@@ -33,13 +33,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_admipresentpass;
 
         /// <summary>
-        /// require_admipresentpass control.
+        /// require_AdmiPresentPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_admipresentpass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_AdmiPresentPass;
 
         /// <summary>
         /// txt_adminewpass control.
@@ -51,13 +51,13 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_adminewpass;
 
         /// <summary>
-        /// require_adminnewpass control.
+        /// require_AdminNewPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_adminnewpass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_AdminNewPass;
 
         /// <summary>
         /// txt_adminnewpassrpeat control.
@@ -69,48 +69,48 @@ namespace OilGasCompany.Interview.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_adminnewpassrpeat;
 
         /// <summary>
-        /// require_adminpassrepeat control.
+        /// require_AdminPassRepeat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_adminpassrepeat;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator require_AdminPassRepeat;
 
         /// <summary>
-        /// reqcompre_adminpassrepeat control.
+        /// reqcompre_AdminPassRepeat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator reqcompre_adminpassrepeat;
+        protected global::System.Web.UI.WebControls.CompareValidator reqcompre_AdminPassRepeat;
 
         /// <summary>
-        /// btn_resetpass control.
+        /// btn_ResetPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_resetpass;
+        protected global::System.Web.UI.WebControls.Button btn_ResetPass;
 
         /// <summary>
-        /// panel_resetpass_warning control.
+        /// panel_ResetPass_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_resetpass_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_ResetPass_Warning;
 
         /// <summary>
-        /// lbl_resetpasswarning control.
+        /// lbl_ResetPassWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_resetpasswarning;
+        protected global::System.Web.UI.WebControls.Label lbl_ResetPassWarning;
     }
 }
