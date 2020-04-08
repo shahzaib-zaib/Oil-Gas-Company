@@ -15,39 +15,39 @@ namespace OilGasCompany.Interview.Admin
     {
 
         /// <summary>
-        /// btn_panelallquestion control.
+        /// btn_panelAllQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_panelallquestion;
+        protected global::System.Web.UI.WebControls.Button btn_panelAllQuestion;
 
         /// <summary>
-        /// gridview_examquestion control.
+        /// gridview_InterviewQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridview_examquestion;
+        protected global::System.Web.UI.WebControls.GridView gridview_InterviewQuestion;
 
         /// <summary>
-        /// panel_examquestion_warning control.
+        /// panel_InterviewQuestion_Warning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_examquestion_warning;
+        protected global::System.Web.UI.WebControls.Panel panel_InterviewQuestion_Warning;
 
         /// <summary>
-        /// lbl_examquestionwarning control.
+        /// lbl_InterviewQuestionWarning control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_examquestionwarning;
+        protected global::System.Web.UI.WebControls.Label lbl_InterviewQuestionWarning;
     }
 }
