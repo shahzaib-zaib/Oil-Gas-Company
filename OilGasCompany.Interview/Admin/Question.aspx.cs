@@ -14,22 +14,22 @@ namespace OilGasCompany.Interview.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            getallquestion();
+            getAllQuestion();
         }
 
 
-        protected void gridview_examquestion_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gridview_InterviewQuestion_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            gridview_examquestion.PageIndex = e.NewPageIndex;
-            getallquestion();
+            gridview_InterviewQuestion.PageIndex = e.NewPageIndex;
+            getAllQuestion();
         }
-        string s = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+        string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //method for getting question 
-        public void getallquestion()
+        public void getAllQuestion()
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spgetallquestion", con);
+                SqlCommand cmd = new SqlCommand("spGetAllQuestion", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 try
                 {
@@ -40,26 +40,26 @@ namespace OilGasCompany.Interview.Admin
                         using (DataTable tb = new DataTable())
                         {
                             ad.Fill(tb);
-                            gridview_examquestion.DataSource = tb;
-                            gridview_examquestion.DataBind();
+                            gridview_InterviewQuestion.DataSource = tb;
+                            gridview_InterviewQuestion.DataBind();
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examquestion_warning.Visible = true;
-                    lbl_examquestionwarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
+                    panel_InterviewQuestion_Warning.Visible = true;
+                    lbl_InterviewQuestionWarning.Text = "Something went wrong. Pleas contact your provider </br>" + ex.Message;
                 }
 
             }
         }
 
         //method for deleting question for the question id 
-        public void deletequestion(int id)
+        public void deleteQuestion(int id)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("delete question where question_id = @questionid", con);
+                SqlCommand cmd = new SqlCommand("delete Question where question_id = @questionid", con);
                 cmd.Parameters.AddWithValue("@questionid", id);
                 try
                 {
@@ -67,19 +67,19 @@ namespace OilGasCompany.Interview.Admin
                     int i = (int)cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        Response.Redirect("~/admin/question.aspx");
+                        Response.Redirect("~/Admin/Question.aspx");
                         Response.Write("Delete Succesfully");
                     }
                     else
                     {
-                        panel_examquestion_warning.Visible = true;
-                        lbl_examquestionwarning.Text = "Something went wrong. Can't delete now";
+                        panel_InterviewQuestion_Warning.Visible = true;
+                        lbl_InterviewQuestionWarning.Text = "Something went wrong. Can't delete now";
                     }
                 }
                 catch (Exception ex)
                 {
-                    panel_examquestion_warning.Visible = true;
-                    lbl_examquestionwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    panel_InterviewQuestion_Warning.Visible = true;
+                    lbl_InterviewQuestionWarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
 
             }
@@ -88,9 +88,9 @@ namespace OilGasCompany.Interview.Admin
 
         protected void gridview_examquestion_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName == "deletequestion")
+            if (e.CommandName == "deleteQuestion")
             {
-                deletequestion(Convert.ToInt32(e.CommandArgument));
+                deleteQuestion(Convert.ToInt32(e.CommandArgument));
             }
         }
     }
