@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="OilGasCompany.Interview.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="OilGasCompany.Interview.Login" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login - Online Interview sytem</title>
+    <title>Login - Online Aptitude Test Sytem</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for login-->

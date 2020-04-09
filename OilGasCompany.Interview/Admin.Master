@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="OilGasCompany.Interview.Admin" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="OilGasCompany.Interview.Admin" %>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -89,7 +89,6 @@
     <Content Include="Admin\Result.aspx" />
     <Content Include="Category.aspx" />
     <Content Include="Criteria.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Myresult.aspx" />
@@ -285,9 +284,6 @@
     </Compile>
     <Compile Include="Criteria.aspx.designer.cs">
       <DependentUpon>Criteria.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

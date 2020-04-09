@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="OilGasCompany.Interview.Admin.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="OilGasCompany.Interview.Admin.Login" %>
 
 <!DOCTYPE html>
 <html lang="en">

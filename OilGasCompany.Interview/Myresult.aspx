@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidatemaster.Master" AutoEventWireup="true" CodeBehind="Myresult.aspx.cs" Inherits="OilGasCompany.Interview.Myresult" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidatemaster.Master" AutoEventWireup="true" CodeFile="Myresult.aspx.cs" Inherits="OilGasCompany.Interview.Myresult" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="heardcontentplaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="maincontentplaceholder" runat="server">

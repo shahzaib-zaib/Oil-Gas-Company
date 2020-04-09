@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Candidatemaster.master.cs" Inherits="OilGasCompany.Interview.Candidatemaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Candidatemaster.master.cs" Inherits="OilGasCompany.Interview.Candidatemaster" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome to online Interview</title>
+    <title>Welcome To Online Aptitude Test</title>
     <asp:ContentPlaceHolder ID="heardcontentplaceholder" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -27,7 +27,7 @@
         <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.aspx">Online Interview System</a>
+                <a class="navbar-brand" href="index.aspx">Online Aptitude Test Sytem</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
