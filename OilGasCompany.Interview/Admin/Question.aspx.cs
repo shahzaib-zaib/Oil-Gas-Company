@@ -86,7 +86,7 @@ namespace OilGasCompany.Interview.Admin
         }
 
 
-        protected void gridview_examquestion_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gridview_InterviewQuestion_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "deleteQuestion")
             {

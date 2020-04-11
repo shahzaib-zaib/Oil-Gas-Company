@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group bg-warning">
                 <asp:Button ID="btn_panelCategoryList" runat="server" Text="Category List" CssClass="btn btn-info" OnClick="btn_panelCategoryList_Click" BorderStyle="None" CausesValidation="False" />
                 <asp:Button ID="btn_panelAddCategory" runat="server" Text="Add Category" CssClass="btn btn-info" OnClick="btn_panelAddCategory_Click" BorderStyle="None" CausesValidation="False" />
             </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="offset-2">
-                            <asp:Button ID="btn_AddCategory" runat="server" Text="Add Category" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_AddCategory_Click" />
+                            <asp:Button ID="btn_AddCategory" runat="server" Text="Add Category" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" OnClick="btn_AddCategory_Click" />
                         </div>
                         <asp:Panel ID="panel_AddCategory_Warning" runat="server" Visible="false">
                             <br />
@@ -45,10 +45,10 @@
                                     <asp:TemplateField HeaderText="Options">
                                         <HeaderStyle CssClass="card-header" />
                                         <ItemTemplate>
-                                            <asp:HyperLink ID="btn_EditCategoryx" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/EditCategory.aspx?cid=" + Eval("category_id")%>'>
+                                            <asp:HyperLink ID="btn_EditCategoryx" runat="server" CssClass="btn" BackColor=" #3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/EditCategory.aspx?cid=" + Eval("category_id")%>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                             </asp:HyperLink>
-                                            <asp:LinkButton ID="btn_DeleteCategory" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("category_id") %>' CommandName="delete_category">
+                                            <asp:LinkButton ID="btn_DeleteCategory" runat="server" CssClass="btn" BackColor=" #e74c3c" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("category_id") %>' CommandName="delete_category">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                             </asp:LinkButton>
                                         </ItemTemplate>

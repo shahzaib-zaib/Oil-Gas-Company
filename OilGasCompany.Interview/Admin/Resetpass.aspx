@@ -5,8 +5,8 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_PanelReste" runat="server" Text="Reset Password" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+            <div class="btn-group bg-warning">
+                <asp:Button ID="btn_PanelReste" runat="server" Text="Reset Password" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#000222" />
             </div>
             <%--Add category --%>
             <div class="card-body">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="offset-2">
-                        <asp:Button ID="btn_ResetPass" runat="server" Text="Reset Password" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_ResetPass_Click" />
+                        <asp:Button ID="btn_ResetPass" runat="server" Text="Reset Password" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" OnClick="btn_ResetPass_Click" />
                     </div>
                     <asp:Panel ID="panel_ResetPass_Warning" runat="server" Visible="false">
                         <br />

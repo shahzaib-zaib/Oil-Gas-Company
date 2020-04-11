@@ -19,8 +19,8 @@ namespace OilGasCompany.Interview.Admin
             {
                 panel_categorylist.Visible = true;
                 panel_AddCategory.Visible = false;
-                btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#343A40");
-                btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#DC3545");
+                btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#000222");
+                btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#ffc107");
                 categorylistmethod();
             }
         }
@@ -29,8 +29,8 @@ namespace OilGasCompany.Interview.Admin
         {
             panel_categorylist.Visible = true;
             panel_AddCategory.Visible = false;
-            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#343A40");
-            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#DC3545");
+            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#000222");
+            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#ffc107");
             categorylistmethod();
 
         }
@@ -40,8 +40,8 @@ namespace OilGasCompany.Interview.Admin
             txt_category.Focus();
             panel_categorylist.Visible = false;
             panel_AddCategory.Visible = true;
-            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#DC3545");
-            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#343A40");
+            btn_panelCategoryList.BackColor = ColorTranslator.FromHtml("#ffc107");
+            btn_panelAddCategory.BackColor = ColorTranslator.FromHtml("#000222");
         }
 
         //This is for adding the category in databse 

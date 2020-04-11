@@ -109,7 +109,7 @@ namespace OilGasCompany.Interview.Admin
             }
         }
         //for paging
-        protected void gridresult_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gridResult_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gridResult.PageIndex = e.NewPageIndex;
             getAllResults();

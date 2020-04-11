@@ -5,8 +5,8 @@
      <div class="col-md-12">
         <div class="card">
             <%--Button For edit--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_DetailsInterview" runat="server" Text="Details Criteria" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+            <div class="btn-group bg-warning">
+                <asp:Button ID="btn_DetailsInterview" runat="server" Text="Details Criteria" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#000222" />
             </div>
             <div class="card mb-3">
                 <div class="card-body">
@@ -40,7 +40,7 @@
                                 </asp:BoundField>
                             </Fields>
                             <FooterTemplate>
-                            <asp:Button ID="btn_CackInterview" runat="server" Text="Back TO Interview" CssClass="btn btn-info" BackColor="#343A40" BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/Interview.aspx"/>
+                            <asp:Button ID="btn_CackInterview" runat="server" Text="Back TO Interview" CssClass="btn btn-info" BackColor="#3498db" BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/Interview.aspx"/>
                             </FooterTemplate>
                             <HeaderStyle CssClass="text-center" />
                         </asp:DetailsView>

@@ -16,9 +16,9 @@
     <link href="vendor/css/custom.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-    <div class="container d-flex h-100">
+    <div class="_D3hj container">
         <div class="card card-login mx-auto mt-5">
-            <div class="card-header">Login</div>
+            <div class="card-header bg-warning text-center font-weight-bold">Candidate Login</div>
             <div class="card-body">
                 <form runat="server" id="formlogin">
                     <asp:Panel ID="pnl_warning" runat="server" Visible="false">
@@ -35,29 +35,20 @@
                         <asp:RegularExpressionValidator ID="rqrexpre_email" runat="server" ErrorMessage="Enter validate email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txt_email" Display="Dynamic" ForeColor="Red"></asp:RegularExpressionValidator>
                     </div>
                     <div class="form-group">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="exampleInputPassword1">Password</label>
-                                <asp:TextBox ID="txt_pass" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rqr_pass" runat="server" ErrorMessage="Enter password" ControlToValidate="txt_pass" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="exampleConfirmPassword">Confirm password</label>
-                                <asp:TextBox ID="txt_repass" runat="server" CssClass="form-control" placeholder="Re-type password" TextMode="Password"></asp:TextBox>
-                                <asp:CompareValidator ID="rqrcopm_pass" runat="server" ErrorMessage="Password do not match" ControlToValidate="txt_repass" Display="Dynamic" ForeColor="Red" ControlToCompare="txt_pass"></asp:CompareValidator>
-                            </div>
-                        </div>
+                        <label for="exampleInputPassword1">Password</label>
+                        <asp:TextBox ID="txt_pass" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqr_pass" runat="server" ErrorMessage="Enter password" ControlToValidate="txt_pass" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label">
                                 <asp:CheckBox ID="chk_remember" runat="server" CssClass="form-check-input remembermecustom" />
-                                Remember Password</label>
+                                Remember Password
+                            </label>
                         </div>
                     </div>
                     <asp:Button ID="btn_login" runat="server" Text="Log In" CssClass="btn btn-primary btn-block" OnClick="btn_login_Click" />
                 </form>
-
             </div>
         </div>
     </div>

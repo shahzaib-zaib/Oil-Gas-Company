@@ -19,8 +19,8 @@ namespace OilGasCompany.Interview.Admin
             {
                 panel_CriteriaList.Visible = true;
                 panel_AddCriteria.Visible = false;
-                btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#343A40");
-                btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#DC3545");
+                btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#000222");
+                btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#ffc107");
                 getCriteriaList();
 
             }
@@ -30,8 +30,8 @@ namespace OilGasCompany.Interview.Admin
         {
             panel_CriteriaList.Visible = true;
             panel_AddCriteria.Visible = false;
-            btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#343A40");
-            btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#DC3545");
+            btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#000222");
+            btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#ffc107");
             getCriteriaList();
         }
         //This is button for the enable list of add subject panel
@@ -39,8 +39,8 @@ namespace OilGasCompany.Interview.Admin
         {
             panel_CriteriaList.Visible = false;
             panel_AddCriteria.Visible = true;
-            btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#DC3545");
-            btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#343A40");
+            btn_panelCriteriaList.BackColor = ColorTranslator.FromHtml("#ffc107");
+            btn_panelAddCriteria.BackColor = ColorTranslator.FromHtml("#000222");
             get_categorydrp();
         }
         //This is button for adding the subject in databse 

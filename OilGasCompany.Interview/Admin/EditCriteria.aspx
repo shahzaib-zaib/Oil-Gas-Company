@@ -5,8 +5,8 @@
     <div class=" col-md-12">
         <div class="card">
          <%--Button For edit subject slect--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelCriteriaList" runat="server" Text="Edit Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+            <div class="btn-group bg-warning">
+                <asp:Button ID="btn_panelCriteriaList" runat="server" Text="Edit Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#000222" />
             </div>
             <div class="card-body">
                     <div class="row form-group">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="offset-2">
-                            <asp:Button ID="btn_EditCriteria" runat="server" Text="Edit Criteria" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_EditCriteria_Click" />
+                            <asp:Button ID="btn_EditCriteria" runat="server" Text="Edit Criteria" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" OnClick="btn_EditCriteria_Click" />
                         </div>
                         <asp:Panel ID="panel_EditCriteria_Warning" runat="server" Visible="false">
                             <br />

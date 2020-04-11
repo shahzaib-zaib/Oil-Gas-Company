@@ -5,8 +5,8 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select edit--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelInterviewQuestion" runat="server" Text="Interview Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+            <div class="btn-group bg-warning">
+                <asp:Button ID="btn_panelInterviewQuestion" runat="server" Text="Interview Question" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#000222" />
             </div>
         </div>
         <div class="card text-center mb-3">
@@ -27,13 +27,13 @@
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Options">
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailsInterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
+                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailsInterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                     </asp:HyperLink>
-                                    <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editquestion.aspx?qid=" + Eval("question_id") %>'>
+                                    <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editquestion.aspx?qid=" + Eval("question_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                     </asp:HyperLink>
-                                    <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("question_id") %>' CommandName="deleteinterviewquestion">
+                                    <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("question_id") %>' CommandName="deleteinterviewquestion">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                     </asp:LinkButton>
                                 </ItemTemplate>

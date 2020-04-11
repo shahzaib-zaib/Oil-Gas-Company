@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
+            <div class="btn-group bg-warning">
                 <asp:Button ID="btn_panelInterviewList" runat="server" Text="Interview List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelInterviewList_Click" />
                 <asp:Button ID="btn_panelAddInterview" runat="server" Text="Add Interview" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelAddInterview_Click" />
             </div>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="offset-2">
-                            <asp:Button ID="btn_AddInterview" runat="server" Text="Add Interview" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_AddInterview_Click" />
+                            <asp:Button ID="btn_AddInterview" runat="server" Text="Add Interview" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" OnClick="btn_AddInterview_Click" />
                         </div>
                         <asp:Panel ID="panel_AddInterview_Warning" runat="server" Visible="false">
                             <br />
@@ -99,19 +99,19 @@
                                     <asp:BoundField DataField="interview_date" HeaderText="Interview Date" DataFormatString="{0:d}" />
                                     <asp:TemplateField HeaderText="Options">
                                         <ItemTemplate>
-                                            <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewdetails.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewdetails.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                             </asp:HyperLink>
-                                            <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editinterview.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editinterview.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                             </asp:HyperLink>
-                                            <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deleteexam">
+                                            <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deleteexam">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                             </asp:LinkButton>
-                                            <asp:HyperLink ID="btn_AddQuestion" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Addquestion.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_AddQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Addquestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-plus" aria-hidden="true"></i> Add Question
                                             </asp:HyperLink>
-                                            <asp:HyperLink ID="btn_ViewQuestion" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewquestion.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_ViewQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewquestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> View Question
                                             </asp:HyperLink>
                                         </ItemTemplate>

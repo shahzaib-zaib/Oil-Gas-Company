@@ -19,8 +19,8 @@ namespace OilGasCompany.Interview.Admin
             {
                 panel_InterviewList.Visible = true;
                 panel_AddInterview.Visible = false;
-                btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#343A40");
-                btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#DC3545");
+                btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#000222");
+                btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#ffc107");
                 getInterviewList();
             }
         }
@@ -28,16 +28,16 @@ namespace OilGasCompany.Interview.Admin
         {
             panel_InterviewList.Visible = true;
             panel_AddInterview.Visible = false;
-            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#343A40");
-            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#DC3545");
+            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#000222");
+            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#ffc107");
             getInterviewList();
         }
         protected void btn_panelAddInterview_Click(object sender, EventArgs e)
         {
             panel_InterviewList.Visible = false;
             panel_AddInterview.Visible = true;
-            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#DC3545");
-            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#343A40");
+            btn_panelInterviewList.BackColor = ColorTranslator.FromHtml("#ffc107");
+            btn_panelAddInterview.BackColor = ColorTranslator.FromHtml("#000222");
             get_CategoryDrp();
             get_CriteriaDrp();
 
@@ -46,7 +46,7 @@ namespace OilGasCompany.Interview.Admin
         string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString; //string of connection
 
         // this is for the add exam 
-        protected void btn_addexam_Click(object sender, EventArgs e)
+        protected void btn_AddInterview_Click(object sender, EventArgs e)
         {
             if (IsValid)
             {
