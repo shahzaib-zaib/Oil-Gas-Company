@@ -20,18 +20,24 @@
     </asp:ContentPlaceHolder>
 </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<body class="fixed-nav sticky-footer bg-light" id="page-top">
     <form  runat="server" id="adminsmaster">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="mainNav">
-        <a class="navbar-brand" href="index.aspx" >Online Aptitude Test System</a>
+        <a class="navbar-brand" href="Index.aspx" >Online Aptitude Test System</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
                 <li class="nav-item">
-                    <img src="../vendor/image/logo.png" alt="Logo Here" class="img-fluid rounded mx-auto d-block" width="100px" />
+                    <img src="../vendor/image/logo2.png" alt="Logo Here" class="img-fluid rounded mx-auto d-block" width="100px" />
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Category">
+                    <a class="nav-link" href="category.aspx">
+                         <i class="fa fa-tachometer" aria-hidden="true"></i>
+                         <span class="nav-link-text"> Dashboard</span>
+                    </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Category">
                     <a class="nav-link" href="category.aspx">
@@ -73,7 +79,7 @@
             <ul class="navbar-nav sidenav-toggler">
                 <li class="nav-item">
                     <a class="nav-link text-center" id="sidenavToggler">
-                        <i class="fa fa-fw fa-angle-left"></i>
+                        <i class="fa fa-angle-double-left"></i>
                     </a>
                 </li>
             </ul>

@@ -227,9 +227,9 @@ body.fixed-nav {
   }
 }
 
-#mainNav.fixed-top.navbar-dark .sidenav-toggler {
-  background-color: #212529;
-}
+/*#mainNav.fixed-top.navbar-dark .sidenav-toggler {
+    background-color: #e9ecef;
+}*/
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
   color: #adb5bd;
@@ -361,7 +361,8 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 
 @media (min-width: 992px) {
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-    background: #343a40;
+    
+    padding-top: 20px;
   }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
     color: white !important;
