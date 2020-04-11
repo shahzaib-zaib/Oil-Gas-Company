@@ -6,8 +6,8 @@
         <div class="card">
             <%--Button For select panel--%>
             <div class="btn-group bg-danger">
-                <asp:Button ID="btn_panelCriteriaList" runat="server" Text="Subject List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelCriteriaList_Click" />
-                <asp:Button ID="btn_panelAddCriteria" runat="server" Text="Add Subject" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelAddCriteria_Click" />
+                <asp:Button ID="btn_panelCriteriaList" runat="server" Text="Criteria List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelCriteriaList_Click" />
+                <asp:Button ID="btn_panelAddCriteria" runat="server" Text="Add Criteria" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelAddCriteria_Click" />
             </div>
             <%--Add subject panel--%>
             <asp:Panel ID="panel_AddCriteria" runat="server">
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Subject Name</label>
+                        <label class="col-md-2 col-form-label ">Criteria Name</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_criteria" runat="server" CssClass="form-control"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_criteria" runat="server" ErrorMessage="Enter Criteria" ControlToValidate="txt_criteria" ForeColor="red"></asp:RequiredFieldValidator>

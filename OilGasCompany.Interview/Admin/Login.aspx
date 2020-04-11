@@ -16,7 +16,7 @@
     <link href="../vendor/css/custom.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="bg-light">
     <div class="container">
         <div class="card card-login mx-auto mt-5">
             <div class="card-header">Login</div>
@@ -56,7 +56,7 @@
                                 Remember Password</label>
                         </div>
                     </div>
-                    <asp:Button ID="btn_Login" runat="server" Text="Log In" CssClass="btn btn-primary btn-block" OnClick="btn_login_Click" />
+                    <asp:Button ID="btn_Login" runat="server" Text="Log In" CssClass="btn btn-primary btn-block" OnClick="btn_Login_Click" />
                     <div class="text-center">
                         <a class="d-block small" href="forgot-password.aspx">Forgot Password?</a>
                     </div>

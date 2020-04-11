@@ -25,7 +25,7 @@ namespace OilGasCompany.Interview.Admin
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("select * from users", con);
+                SqlCommand cmd = new SqlCommand("select * from Candidates", con);
                 try
                 {
                     con.Open();
@@ -58,7 +58,7 @@ namespace OilGasCompany.Interview.Admin
         }
 
         //for paging
-        protected void gridallstudents_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gridAllCandidates_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gridAllCandidates.PageIndex = e.NewPageIndex;
             getAllCandidates();

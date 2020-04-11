@@ -67,7 +67,7 @@ namespace OilGasCompany.Interview.Admin
         {
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("SELECT COUNT(user_id) FROM users", con);
+                SqlCommand cmd = new SqlCommand("select count(candidate_id) from Candidates", con);
                 try
                 {
                     con.Open();
