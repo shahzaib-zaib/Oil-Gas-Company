@@ -28,6 +28,8 @@ namespace OilGasCompany.Interview.Admin
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@candidate_fname", txt_candifname.Text);
                     cmd.Parameters.AddWithValue("@candidate_lname", txt_candilname.Text);
+                    cmd.Parameters.AddWithValue("@candidate_fathername", txt_candifathername.Text);
+                    cmd.Parameters.AddWithValue("@candidate_nicnumber", txt_candinicnumber.Text);
                     cmd.Parameters.AddWithValue("@email", txt_candiemail.Text);
                     cmd.Parameters.AddWithValue("@password", txt_candipass.Text);
                     cmd.Parameters.AddWithValue("@candidate_gender", txt_candigender.Text);
@@ -59,15 +61,15 @@ namespace OilGasCompany.Interview.Admin
                         }
                         else
                         {
-                            txt_adminame.Focus();
+                            txt_candinicnumber.Focus();
                             panel_AddCandidate_Warning.Visible = true;
-                            lbl_AddCandidateWarning.Text = "Email is already in use";
+                            lbl_AddCandidateWarning.Text = "CNIC is already in use";
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        txt_admiemail.Focus();
+                        txt_candinicnumber.Focus();
                         panel_AddCandidate_Warning.Visible = true;
                         lbl_AddCandidateWarning.Text = "Something went wrong! Contact your devloper </br>" + ex.Message;
                     }
@@ -75,7 +77,7 @@ namespace OilGasCompany.Interview.Admin
             }
             else
             {
-                txt_admiemail.Focus();
+                txt_candinicnumber.Focus();
                 panel_AddCandidate_Warning.Visible = true;
                 lbl_AddCandidateWarning.Text = "Please fill all the requirements";
             }

@@ -25,10 +25,24 @@
                     </div>
                 </div>
                 <div class="row form-group">
+                    <label class="col-md-2 col-form-label ">Father Name</label>
+                    <div class="col-md-4">
+                        <asp:TextBox ID="txt_candifathername" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandidateFatherName" runat="server" ErrorMessage="Enter father name" ControlToValidate="txt_candifathername" ForeColor="red"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label ">NIC Number</label>
+                    <div class="col-md-4">
+                        <asp:TextBox ID="txt_candinicnumber" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandidateNICNmuber" runat="server" ErrorMessage="Enter nic number" ControlToValidate="txt_candinicnumber" ForeColor="red"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="row form-group">
                     <label class="col-md-2 col-form-label ">Email</label>
                     <div class="col-md-4">
                         <asp:TextBox ID="txt_candiemail" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="require_Candidateemail" runat="server" ErrorMessage="Enter email" ControlToValidate="txt_candiemail" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="require_CandidateEmail" runat="server" ErrorMessage="Enter email" ControlToValidate="txt_candiemail" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -47,129 +61,136 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Gender</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candigender" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiGender" runat="server" ErrorMessage="Enter gender" ControlToValidate="txt_candigender" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Date of Birth</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candidob" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiDob" runat="server" ErrorMessage="Enter date of birth" ControlToValidate="txt_candidob" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Address</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiaddress" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiAddress" runat="server" ErrorMessage="Enter address" ControlToValidate="txt_candiaddress" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">City</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicity" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiCity" runat="server" ErrorMessage="Enter city" ControlToValidate="txt_candicity" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Country</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicountry" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiCountry" runat="server" ErrorMessage="Enter Country" ControlToValidate="txt_candicountry" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Mobile Number</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candinumber" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiMobile" runat="server" ErrorMessage="Enter mobile number" ControlToValidate="txt_candinumber" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Education</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiedu" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiEducation" runat="server" ErrorMessage="Enter education" ControlToValidate="txt_candiedu" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">High School / University</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox8" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiuni" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiUni" runat="server" ErrorMessage="Enter high school/university" ControlToValidate="txt_candiuni" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">High School / University Address</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox9" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiuniadd" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_UniAddress" runat="server" ErrorMessage="Enter address" ControlToValidate="txt_candiuniadd" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Phone Number</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox10" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candieduphone" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_UniPhone" runat="server" ErrorMessage="Enter Phone Number" ControlToValidate="txt_candieduphone" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Degree / Certificate</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox11" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiedudgree" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_UniDegree" runat="server" ErrorMessage="Enter degree" ControlToValidate="txt_candiedudgree" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Start Date</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox12" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candiedusdate" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_UniStartDate" runat="server" ErrorMessage="Enter start date" ControlToValidate="txt_candiedusdate" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">End Date</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox13" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candieduedate" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_UniEndDate" runat="server" ErrorMessage="Enter end date" ControlToValidate="txt_candieduedate" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Company name</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox14" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicomname" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CompanyName" runat="server" ErrorMessage="Enter company name" ControlToValidate="txt_candicomname" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Company Address</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox15" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicomaddress" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CompanyAddress" runat="server" ErrorMessage="Enter company address" ControlToValidate="txt_candicomaddress" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Job Title</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox16" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicomjob" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiJobTitle" runat="server" ErrorMessage="Enter job title" ControlToValidate="txt_candicomjob" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Job Experience</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox17" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicomexp" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_CandiJobExperience" runat="server" ErrorMessage="Enter job experience" ControlToValidate="txt_candicomexp" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-2 col-form-label ">First Name</label>
+                    <label class="col-md-2 col-form-label ">Start Date</label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="TextBox18" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ErrorMessage="Enter first name" ControlToValidate="txt_candifname" ForeColor="red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txt_candicomsdate" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_JobStartDate" runat="server" ErrorMessage="Enter start date" ControlToValidate="txt_candicomsdate" ForeColor="red"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label ">End Date</label>
+                    <div class="col-md-4">
+                        <asp:TextBox ID="txt_candicomedate" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="require_JobEndDate" runat="server" ErrorMessage="Enter start date" ControlToValidate="txt_candicomedate" ForeColor="red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="card-footer">

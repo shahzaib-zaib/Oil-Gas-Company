@@ -27,7 +27,7 @@ namespace OilGasCompany.Interview.Admin
                     SqlCommand cmd = new SqlCommand("spAdminRegisterInsert", con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@admin_name", txt_adminame.Text);
-                    cmd.Parameters.AddWithValue("@email", txt_admiemail.Text);
+                    cmd.Parameters.AddWithValue("@admin_email", txt_admiemail.Text);
                     cmd.Parameters.AddWithValue("@password", txt_adminpass.Text);
                     try
                     {

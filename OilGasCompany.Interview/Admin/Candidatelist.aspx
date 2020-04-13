@@ -13,8 +13,10 @@
                     <div class="table-responsive">
                         <asp:GridView ID="gridAllCandidates" runat="server" GridLines="None" AllowPaging="True" AutoGenerateColumns="False" CssClass="table table-bordered" PageSize="8" OnPageIndexChanging="gridAllCandidates_PageIndexChanging">
                             <Columns>
-                                <asp:BoundField DataField="candidate_fname" HeaderText="First name" />
-                                <asp:BoundField DataField="candidate_lname" HeaderText="Last name" />
+                                <asp:BoundField DataField="candidate_fname" HeaderText="First Name" />
+                                <asp:BoundField DataField="candidate_lname" HeaderText="Last nName" />
+                                <asp:BoundField DataField="candidate_fathername" HeaderText="Father Name" />
+                                <asp:BoundField DataField="candidate_nicnumber" HeaderText="NIC Number" />
                                 <asp:BoundField DataField="candidate_email" HeaderText="Email" />
                                 <asp:BoundField DataField="candidate_gender" HeaderText="Gender" />
                                 <asp:BoundField DataField="candidate_dob" HeaderText="Date of Birth" />
@@ -29,7 +31,7 @@
                                 <asp:BoundField DataField="candidate_edudgree" HeaderText="Degree/Certificate" />
                                 <asp:BoundField DataField="candidate_edusdate" HeaderText="Start Date" />
                                 <asp:BoundField DataField="candidate_eduedate" HeaderText="End Date" />
-                                <asp:BoundField DataField="candidate_comname" HeaderText="Company name" />
+                                <asp:BoundField DataField="candidate_comname" HeaderText="Company Name" />
                                 <asp:BoundField DataField="candidate_comaddress" HeaderText="Company Address" />
                                 <asp:BoundField DataField="candidate_comjob" HeaderText="Job Title" />
                                 <asp:BoundField DataField="candidate_comexp" HeaderText="Job Experience" />
