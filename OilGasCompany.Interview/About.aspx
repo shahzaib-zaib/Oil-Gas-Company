@@ -5,7 +5,7 @@
         <div class="row">
         <div class="col-md-12">
             <div class="card-header">
-                <h2>This is the online interview system application</h2>
+                <h2>This is the online aptitute test system application</h2>
             </div>
             <div class="card-body">
                 <p>In this project, we are going to make an online interview system where an manager can take interview for the current candidate who are logged in this system. Here, the manager will take the interview of objective type questions.</p>

@@ -5,8 +5,8 @@
     <div class="col-md-12">
         <div class="card">
             <%--Button For select panel--%>
-            <div class="btn-group bg-danger">
-                <asp:Button ID="btn_paneladdadmin" runat="server" Text="Add Admin" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#343A40" />
+            <div class="btn-group bg-warning">
+                <asp:Button ID="btn_paneladdadmin" runat="server" Text="Add Admin" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" BackColor="#000222" />
             </div>
             <%--Add category --%>
             <div class="card-body">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="offset-2">
-                        <asp:Button ID="btn_addadmin" runat="server" Text="Add Admin" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" OnClick="btn_addadmin_Click" />
+                        <asp:Button ID="btn_addadmin" runat="server" Text="Add Admin" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" OnClick="btn_addadmin_Click" />
                     </div>
                     <asp:Panel ID="panel_addamin_warning" runat="server" Visible="false">
                         <br />

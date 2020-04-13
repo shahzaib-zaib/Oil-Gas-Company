@@ -34,7 +34,7 @@
                     <img src="../vendor/image/logo2.png" alt="Logo Here" class="img-fluid rounded mx-auto d-block" width="100px" />
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Category">
-                    <a class="nav-link" href="category.aspx">
+                    <a class="nav-link" href="Index.aspx">
                          <i class="fa fa-tachometer" aria-hidden="true"></i>
                          <span class="nav-link-text"> Dashboard</span>
                     </a>
