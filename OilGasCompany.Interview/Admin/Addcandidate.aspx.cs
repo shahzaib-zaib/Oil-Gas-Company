@@ -61,7 +61,7 @@ namespace OilGasCompany.Interview.Admin
                         }
                         else
                         {
-                            txt_candinicnumber.Focus();
+                            txt_candiemail.Focus();
                             panel_AddCandidate_Warning.Visible = true;
                             lbl_AddCandidateWarning.Text = "CNIC is already in use";
                         }
@@ -69,7 +69,7 @@ namespace OilGasCompany.Interview.Admin
                     }
                     catch (Exception ex)
                     {
-                        txt_candinicnumber.Focus();
+                        txt_candiemail.Focus();
                         panel_AddCandidate_Warning.Visible = true;
                         lbl_AddCandidateWarning.Text = "Something went wrong! Contact your devloper </br>" + ex.Message;
                     }
@@ -77,7 +77,7 @@ namespace OilGasCompany.Interview.Admin
             }
             else
             {
-                txt_candinicnumber.Focus();
+                txt_candiemail.Focus();
                 panel_AddCandidate_Warning.Visible = true;
                 lbl_AddCandidateWarning.Text = "Please fill all the requirements";
             }

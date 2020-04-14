@@ -7,12 +7,13 @@
     <hr />
     </div>
     <div class="col-xl-4 col-sm-6 mb-4">
-        <div class="card text-white bg-success o-hidden h-100">
+        <div class="card text-white bg-aqua o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-comments"></i>
+                    
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lblTotalInterview" runat="server"></asp:Label> Interviews</div>
+                <h3><asp:Label ID="lblTotalInterview" runat="server"></asp:Label></h3>
+                <div class="mr-5">Interviews</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Interview.aspx">
                 <span class="float-left">View Details</span>
@@ -26,9 +27,10 @@
         <div class="card text-white bg-warning o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-comments"></i>
+                    
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lblTotalQuestion" runat="server"></asp:Label> Questions</div>
+                <h3><asp:Label ID="lblTotalQuestion" runat="server"></asp:Label></h3>
+                <div class="mr-5">Questions</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Question.aspx">
                 <span class="float-left">View Details</span>
@@ -39,12 +41,13 @@
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 mb-4">
-        <div class="card text-white bg-primary o-hidden h-100">
+        <div class="card text-white bg-red o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-comments"></i>
+
                 </div>
-                <div class="mr-5">We have total <asp:Label ID="lblTotalCandidates" runat="server"></asp:Label> Canidates</div>
+                <h3><asp:Label ID="lblTotalCandidates" runat="server"></asp:Label></h3>
+                <div class="mr-5">Canidates</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Candidatelist.aspx">
                 <span class="float-left">View Details</span>
