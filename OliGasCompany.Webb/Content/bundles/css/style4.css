@@ -1,0 +1,29 @@
+﻿.singleFeatureImagewrapper095f520e {
+    background-image: url('https://corporate.exxonmobil.com/-/media/Global/Images/Careers/City-at-night_banner.jpg?usecustomfunctions=1&centercrop=1');
+}
+
+@media (max-width: 1024px) {
+    .singleFeatureImagewrapper095f520e {
+        background-image: url('https://corporate.exxonmobil.com/-/media/Global/Images/Careers/City-at-night_banner.jpg?w=1024&usecustomfunctions=1&centercrop=1&hash=9C82CF2BBBF5F20B62AA28B29905624308CC37E8');
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),only screen and(min--moz-device-pixel-ratio: 2) and(max-width: 1024px),only screen and(-o-min-device-pixel-ratio: 2 / 1) and(max-width: 1024px),only screen and(min-device-pixel-ratio: 2) and(max-width: 1024px),only screen and(min-resolution: 192dpi) and(max-width: 1024px),only screen and(min-resolution: 2dppx) and(max-width: 1024px) {
+    .singleFeatureImagewrapper095f520e {
+        background-image: url('https://corporate.exxonmobil.com/-/media/Global/Images/Careers/City-at-night_banner.jpg?w=2048&usecustomfunctions=1&centercrop=1&hash=C5214BEFE2DE34E4B7299715B28F08F6EB6E3563')
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px),only screen and(min--moz-device-pixel-ratio: 2) and(max-width: 768px),only screen and(-o-min-device-pixel-ratio: 2 / 1) and(max-width: 768px),only screen and(min-device-pixel-ratio: 2) and(max-width: 768px),only screen and(min-resolution: 192dpi) and(max-width: 768px),only screen and(min-resolution: 2dppx) and(max-width: 768px) {
+    .singleFeatureImagewrapper095f520e {
+        background-image: url('https://corporate.exxonmobil.com/-/media/Global/Images/Careers/City-at-night_banner.jpg?w=768&usecustomfunctions=1&centercrop=1&hash=C310AB2521BF7851FA791B56C4661CD602D61FE4')
+    }
+}
+
+@media (max-width: 768px) and (min-resolution: 200dpi) {
+    .singleFeatureImagewrapper095f520e {
+        background-image: url('https://corporate.exxonmobil.com/-/media/Global/Images/Careers/City-at-night_banner.jpg?w=768&usecustomfunctions=1&centercrop=1&hash=C310AB2521BF7851FA791B56C4661CD602D61FE4')
+    }
+}
+
+ 

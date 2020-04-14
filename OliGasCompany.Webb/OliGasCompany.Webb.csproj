@@ -110,6 +110,7 @@
     <Content Include="Content\bundles\css\style1.css" />
     <Content Include="Content\bundles\css\style2.css" />
     <Content Include="Content\bundles\css\style3.css" />
+    <Content Include="Content\bundles\css\style4.css" />
     <Content Include="Content\bundles\css\styles.css" />
     <Content Include="Content\bundles\scripts\datetime.js" />
     <Content Include="Content\bundles\scripts\globalmenu.js" />
