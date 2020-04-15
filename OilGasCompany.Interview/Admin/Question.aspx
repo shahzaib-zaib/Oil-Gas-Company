@@ -27,13 +27,13 @@
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Options">
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailsInterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
+                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#f1c40f" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailinterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                     </asp:HyperLink>
-                                    <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/EditQuestion.aspx?qid=" + Eval("question_id") %>'>
+                                    <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/EditQuestion.aspx?qid=" + Eval("question_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                     </asp:HyperLink>
-                                    <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deletequestion">
+                                    <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#e74c3c" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deletequestion">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                     </asp:LinkButton>
                                 </ItemTemplate>

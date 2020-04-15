@@ -2,15 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="heardcontentplaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="maincontentplaceholder" runat="server">
-     <h2 class="m-4">Answer all the questions</h2>
+    <h2 class="m-4">Answer all the questions</h2>
     <hr />
-    <asp:TextBox ID="getstringuser" runat="server" Visible="false"></asp:TextBox>
+    <asp:TextBox ID="getstringcandidate" runat="server" Visible="false"></asp:TextBox>
     <asp:GridView ID="gridview_interviewquestion" runat="server" AutoGenerateColumns="False" GridLines="None">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
                     <asp:Label ID="lblid" runat="server" Text='<%# Eval("question_id") %>' Visible="false"></asp:Label>
                     <asp:Label ID="lbl_question" runat="server" Text='<%# Eval("question_name") %>'></asp:Label>
+                    <br />
                     <br />
                     <asp:RadioButton GroupName="a" Text='<%# Eval("option_one") %>' ID="option_one" runat="server" />
                     <br />

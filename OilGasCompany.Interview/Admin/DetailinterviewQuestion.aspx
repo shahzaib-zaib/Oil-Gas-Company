@@ -15,25 +15,25 @@
                         <asp:DetailsView ID="gridview_InterviewDetails" runat="server" GridLines="None" CssClass="table table-bordered" AutoGenerateRows="False">
                             <Fields>
                                 <asp:BoundField DataField="interview_description" HeaderText="Interview Discription" NullDisplayText="No Discription">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="question_name" HeaderText="Question">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="option_one" HeaderText="Option One">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="option_two" HeaderText="Option Two">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="option_three" HeaderText="Option three">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="option_four" HeaderText="Option four">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="question_answer" HeaderText="Correct answer">
-                                    <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
+                                    <HeaderStyle Font-Bold="true" CssClass="" />
                                 </asp:BoundField>
                             </Fields>
                             <FooterTemplate>

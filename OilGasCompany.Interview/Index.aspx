@@ -8,7 +8,7 @@
     <div class="row">
         <asp:Repeater ID="gridview_categorylist" runat="server">
             <ItemTemplate>
-                <div class="col-lg-3 mb-3">
+                <div class="col-lg-4 mb-3">
                     <div class="card h-100 text-center">
                         <h4 class="card-header"><%# Eval("category_name") %></h4>
                         <div class="card-footer">

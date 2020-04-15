@@ -15,20 +15,20 @@ namespace OilGasCompany.Interview
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie candidatecookie = Request.Cookies["candidate_cookies"];
-            if (Session["candidateemail"] != null || candidatecookie != null)
+            if (Session["Candidateemail"] != null || candidatecookie != null)
             {
-                if (Session["candidateemail"] == null)
+                if (Session["Candidateemail"] == null)
                 {
-                    getstringuser.Text = candidatecookie["candidateemail"];
+                    getstringcandidate.Text = candidatecookie["candidateemail"];
                 }
                 else
                 {
-                    getstringuser.Text = Session["candidateemail"].ToString();
+                    getstringcandidate.Text = Session["candidateemail"].ToString();
                 }
             }
             else
             {
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("~/login.aspx");
             }
 
             if (!IsPostBack)
@@ -36,7 +36,7 @@ namespace OilGasCompany.Interview
                 string eid = Request.QueryString["eid"];
                 if (eid == null)
                 {
-                    Response.Redirect("Index.aspx");
+                    Response.Redirect("index.aspx");
                 }
                 questionistmethod(Convert.ToInt32(eid));
             }
@@ -112,7 +112,7 @@ namespace OilGasCompany.Interview
                     select_number = 4;
                 }
 
-                checkanwer(li.Text);
+                checkanswer(li.Text);
                 panel_questshow_warning.Visible = false;
             }
             saveinresult(passfail(), correct_number, gridview_interviewquestion.Rows.Count);
@@ -120,7 +120,7 @@ namespace OilGasCompany.Interview
         }
 
         //method for checking answer wheter it is right or wrong 
-        public void checkanwer(string qid)
+        public void checkanswer(string qid)
         {
             using (SqlConnection con = new SqlConnection(s))
             {
@@ -154,7 +154,7 @@ namespace OilGasCompany.Interview
                 catch (Exception ex)
                 {
                     panel_questshow_warning.Visible = true;
-                    lbl_questshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_questshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
@@ -199,19 +199,19 @@ namespace OilGasCompany.Interview
                 cmd.Parameters.AddWithValue("@resultstatus", status);
                 cmd.Parameters.AddWithValue("@resultscore", score);
                 cmd.Parameters.AddWithValue("@totalquestion", tquestion);
-                cmd.Parameters.AddWithValue("@candidatename", getstringuser.Text);
-                cmd.Parameters.AddWithValue("@einterviewdate", DateTime.Now.ToString());
+                cmd.Parameters.AddWithValue("@candidatename", getstringcandidate.Text);
+                cmd.Parameters.AddWithValue("@interviewdate", DateTime.Now.ToString());
 
                 try
                 {
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    Response.Redirect("~/Index.aspx");
+                    Response.Redirect("~/index.aspx");
                 }
                 catch (Exception ex)
                 {
                     panel_questshow_warning.Visible = true;
-                    lbl_questshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact you developer for this problem" + ex.Message;
+                    lbl_questshowwarning.Text = "Something went wrong. Please try after sometime later</br> Contact your developer for this problem" + ex.Message;
                 }
             }
         }
