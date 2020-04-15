@@ -27,7 +27,7 @@ namespace OilGasCompany.Interview.Admin
 
         string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString; //string of connection
                                                                                     //for adding the question having exam id
-        protected void btn_addquestion_Click(object sender, EventArgs e)
+        protected void btn_addQuestion_Click(object sender, EventArgs e)
         {
             string eid = Request.QueryString["eid"];
             if (IsValid)

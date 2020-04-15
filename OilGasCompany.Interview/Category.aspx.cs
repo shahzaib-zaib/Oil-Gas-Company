@@ -18,7 +18,7 @@ namespace OilGasCompany.Interview
             {
                 Response.Redirect("Index.aspx");
             }
-            scriterialistmethod(Convert.ToInt32(cid));
+            criterialistmethod(Convert.ToInt32(cid));
             categorynamemethod(Convert.ToInt32(cid));
         }
 
@@ -26,7 +26,7 @@ namespace OilGasCompany.Interview
         string s = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
 
         //method for subjectlist
-        public void scriterialistmethod(int id)
+        public void criterialistmethod(int id)
         {
 
             using (SqlConnection con = new SqlConnection(s))

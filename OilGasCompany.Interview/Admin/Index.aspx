@@ -13,7 +13,7 @@
                     
                 </div>
                 <h3><asp:Label ID="lblTotalInterview" runat="server"></asp:Label></h3>
-                <div class="mr-5">Interviews</div>
+                <div class="mr-5">Total Test</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Interview.aspx">
                 <span class="float-left">View Details</span>
@@ -30,7 +30,7 @@
                     
                 </div>
                 <h3><asp:Label ID="lblTotalQuestion" runat="server"></asp:Label></h3>
-                <div class="mr-5">Questions</div>
+                <div class="mr-5">Total Questions</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Question.aspx">
                 <span class="float-left">View Details</span>
@@ -47,7 +47,7 @@
 
                 </div>
                 <h3><asp:Label ID="lblTotalCandidates" runat="server"></asp:Label></h3>
-                <div class="mr-5">Canidates</div>
+                <div class="mr-5">Total Canidates</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="Candidatelist.aspx">
                 <span class="float-left">View Details</span>

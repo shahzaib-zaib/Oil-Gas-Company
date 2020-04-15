@@ -2,17 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="heardcontentplaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="maincontentplaceholder" runat="server">
-    <h2 class="m-4">
-            All <asp:Label ID="lbl_categoryscriteria" runat="server"></asp:Label> Category Criteria</h2>
+    <h2 class="m-4 mb-5">
+            All <asp:Label ID="lbl_categoryscriteria" runat="server"></asp:Label> Aptitude Test</h2>
         <hr />
     <div class="row">
                 <asp:Repeater ID="gridview_categoryitem" runat="server">
             <ItemTemplate>
-                <div class="col-lg-3 mb-3">
+                <div class="col-lg-4 mb-3">
                     <div class="card h-100 text-center">
-                        <h4 class="card-header"><%# Eval("scriteria_name") %></h4>
+                        <h4 class="card-header"><%# Eval("criteria_name") %></h4>
                         <div class="card-footer">
-                            <asp:HyperLink ID="btn_category" runat="server" CssClass="btn btn-primary" ForeColor="White" NavigateUrl='<%# "~/Criteria.aspx?sid=" +  Eval("scriteria_id") %>'>Go to Interviews</asp:HyperLink>
+                            <asp:HyperLink ID="btn_category" runat="server" CssClass="btn btn-success" ForeColor="White" NavigateUrl='<%# "~/Criteria.aspx?sid=" +  Eval("criteria_id") %>'>Go to Test</asp:HyperLink>
                         </div>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ namespace OilGasCompany.Interview.Admin
             }
         }
         //for paging
-        protected void gridview_examquestion_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gridview_InterviewQuestion_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             string eid = Request.QueryString["eid"];
             gridview_InterviewQuestion.PageIndex = e.NewPageIndex;

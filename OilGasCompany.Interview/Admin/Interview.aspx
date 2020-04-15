@@ -6,8 +6,8 @@
         <div class="card">
             <%--Button For select panel--%>
             <div class="btn-group bg-warning">
-                <asp:Button ID="btn_panelInterviewList" runat="server" Text="Interview List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelInterviewList_Click" />
-                <asp:Button ID="btn_panelAddInterview" runat="server" Text="Add Interview" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelAddInterview_Click" />
+                <asp:Button ID="btn_panelInterviewList" runat="server" Text="Test List" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelInterviewList_Click" />
+                <asp:Button ID="btn_panelAddInterview" runat="server" Text="Add Test" CssClass="btn btn-info" BorderStyle="None" CausesValidation="False" OnClick="btn_panelAddInterview_Click" />
             </div>
             <%--Add exam panel--%>
             <asp:Panel ID="panel_AddInterview" runat="server">
@@ -29,27 +29,27 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Name</label>
+                        <label class="col-md-2 col-form-label ">Test Name</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_interviewname" runat="server" CssClass="form-control"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_InterviewName" runat="server" ErrorMessage="Enter interview name" ControlToValidate="txt_interviewname" ForeColor="red"></asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Discription</label>
+                        <label class="col-md-2 col-form-label ">Test Discription</label>
                         <div class="col-md-9">
                             <asp:TextBox ID="txt_interviewdis" runat="server" TextMode="MultiLine" CssClass="form-control" Height="150px"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Date</label>
+                        <label class="col-md-2 col-form-label ">Test Date</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_interviewdate" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_InterviewDate" runat="server" ErrorMessage="Enter interview date" ControlToValidate="txt_interviewdate" ForeColor="red" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Duration(Minute)</label>
+                        <label class="col-md-2 col-form-label ">Test Duration(Minute)</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_interviewduration" runat="server" CssClass="form-control" TextMode="SingleLine"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_InterviewDuration" runat="server" ErrorMessage="Enter interview duration" ControlToValidate="txt_interviewduration" ForeColor="red" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Pass Marks</label>
+                        <label class="col-md-2 col-form-label ">Test Pass Marks</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_interviewpassmarks" runat="server" CssClass="form-control"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_InterviewPassMark" runat="server" ErrorMessage="Enter interview pass marks" ControlToValidate="txt_interviewpassmarks" ForeColor="red" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Interview Total Marks</label>
+                        <label class="col-md-2 col-form-label ">Test Total Marks</label>
                         <div class="col-md-4">
                             <asp:TextBox ID="txt_interviewmatotalmarks" runat="server" CssClass="form-control" TextMode="SingleLine"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="require_InterviewMaTotal" runat="server" ErrorMessage="Enter total marks" ControlToValidate="txt_interviewmatotalmarks" ForeColor="red" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -95,23 +95,23 @@
                                 <Columns>
                                     <asp:BoundField DataField="category_name" HeaderText="Category Name" />
                                     <asp:BoundField DataField="criteria_name" HeaderText="Criteria Name" />
-                                    <asp:BoundField DataField="interview_name" HeaderText="Interview Name" />
-                                    <asp:BoundField DataField="interview_date" HeaderText="Interview Date" DataFormatString="{0:d}" />
+                                    <asp:BoundField DataField="interview_name" HeaderText="Test Name" />
+                                    <asp:BoundField DataField="interview_date" HeaderText="Test Date" DataFormatString="{0:d}" />
                                     <asp:TemplateField HeaderText="Options">
                                         <ItemTemplate>
-                                            <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewdetails.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#82e0aa" margin="3px" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewdetails.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                             </asp:HyperLink>
-                                            <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editinterview.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#82e0aa" margin="3px" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editinterview.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                             </asp:HyperLink>
-                                            <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deleteexam">
+                                            <asp:LinkButton ID="btn_DeleteInterview" runat="server" CssClass="btn" BackColor="#82e0aa" margin="3px" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("interview_id") %>' CommandName="deleteexam">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                             </asp:LinkButton>
-                                            <asp:HyperLink ID="btn_AddQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Addquestion.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_AddQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" margin="3px" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Addquestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-plus" aria-hidden="true"></i> Add Question
                                             </asp:HyperLink>
-                                            <asp:HyperLink ID="btn_ViewQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewquestion.aspx?eid=" + Eval("interview_id") %>'>
+                                            <asp:HyperLink ID="btn_ViewQuestion" runat="server" CssClass="btn" BackColor="#82e0aa" margin="3px" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Interviewquestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> View Question
                                             </asp:HyperLink>
                                         </ItemTemplate>

@@ -27,7 +27,7 @@
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="Options">
                                 <ItemTemplate>
-                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailsInterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
+                                    <asp:HyperLink ID="btn_DetailsInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/DetailinterviewQuestion.aspx?eid=" + Eval("interview_id") %>'>
                                             <i class="fa fa-info-circle" aria-hidden="true"></i> Details
                                     </asp:HyperLink>
                                     <asp:HyperLink ID="btn_EditInterview" runat="server" CssClass="btn" BackColor="#3498db" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/Admin/Editquestion.aspx?qid=" + Eval("question_id") %>'>

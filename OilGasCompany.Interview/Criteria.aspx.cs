@@ -30,7 +30,7 @@ namespace OilGasCompany.Interview
 
             using (SqlConnection con = new SqlConnection(s))
             {
-                SqlCommand cmd = new SqlCommand("spInterviewSerachCategory", con);
+                SqlCommand cmd = new SqlCommand("spInterviewSearchCategory", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@criteriaid", id);
                 try
